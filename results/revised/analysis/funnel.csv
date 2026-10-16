@@ -1,0 +1,12 @@
+step,count,note
+queries in release,11121,release funnel (prepare)
+all relations resolvable,6398,release funnel (prepare)
+in a selected market component,2660,release funnel (prepare)
+transpiled to DuckDB,2506,release funnel (prepare)
+binds against loaded schema,1135,release funnel (prepare)
+executes successfully,1051,release funnel (prepare)
+returns a non-empty answer,975,release funnel (prepare)
+survivors (non-empty answers),975,
+in the structural markets (lattice),947,28 survivors are in markets below the lattice size threshold
+materialized assets in structural markets,806,141 excluded in those markets (row cap over all survivors: 119)
+assets in markets with the full protocol,812,"15 markets with at least 8 assets; 6 smaller markets left out (cids 1115, 2337, 2034, 487, 2287, 3561)"

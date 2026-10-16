@@ -1,0 +1,5 @@
+family,verified_pairs,share_pct
+projection,2129,79.59
+selection,524,19.59
+rollup,22,0.82
+projection+selection,2653,99.18

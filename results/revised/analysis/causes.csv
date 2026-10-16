@@ -1,0 +1,6 @@
+workload,attacker,cause,distinct_plans,distinct_targets,mechanisms
+sqlshare_main,operational,target not for sale (infinite price),1,1,querymarket_viewcover_instance
+sqlshare_main,oracle,instance-specific derivation (refuted by the pricing support),162,7,chawla_cip;chawla_layering;chawla_lpip;chawla_uip;chawla_xos;qirana_shannon;qirana_weighted_coverage
+sqlshare_main,oracle,no bundle guarantee (information-arbitrage-free only),3,3,qirana_uniform_entropy_gain
+sqlshare_main,oracle,target not for sale (infinite price),6,6,querymarket_viewcover
+tpch,operational,no bundle guarantee (information-arbitrage-free only),2,2,qirana_uniform_entropy_gain

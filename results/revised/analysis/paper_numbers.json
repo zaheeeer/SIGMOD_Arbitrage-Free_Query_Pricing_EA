@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261015,
+    "level": 0.95,
+    "baseline": "uniform",
+    "workloads": [
+      "sqlshare_14",
+      "sqlshare_15",
+      "sqlshare_main",
+      "tpch"
+    ]
+  },
+  "funnel": [
+    {
+      "step": "queries in release",
+      "count": 11121,
+      "note": "release funnel (prepare)"
+    },
+    {
+      "step": "all relations resolvable",
+      "count": 6398,
+      "note": "release funnel (prepare)"
+    },
+    {
+      "step": "in a selected market component",
+      "count": 2660,
+      "note": "release funnel (prepare)"
+    },
+    {
+      "step": "transpiled to DuckDB",
+      "count": 2506,
+      "note": "release funnel (prepare)"
+    },
+    {
+      "step": "binds against loaded schema",
+      "count": 1135,
+      "note": "release funnel (prepare)"
+    },
+    {
+      "step": "executes successfully",
+      "count": 1051,
+      "note": "release funnel (prepare)"
+    },
+    {
+      "step": "returns a non-empty answer",
+      "count": 975,
+      "note": "release funnel (prepare)"
+    },
+    {
+      "step": "survivors (non-empty answers)",
+      "count": 975,
+      "note": ""
+    },
+    {
+      "step": "in the structural markets (lattice)",
+      "count": 947,
+      "note": "28 survivors are in markets below the lattice size threshold"
+    },
+    {
+      "step": "materialized assets in structural markets",
+      "count": 806,
+      "note": "141 excluded in those markets (row cap over all survivors: 119)"
+    },
+    {
+      "step": "assets in markets with the full protocol",
+      "count": 812,
+      "note": "15 markets with at least 8 assets; 6 smaller markets left out (cids 1115, 2337, 2034, 487, 2287, 3561)"
+    }
+  ],
+  "lattice_families": [
+    {
+      "family": "projection",
+      "verified_pairs": 2129,
+      "share_pct": 79.59
+    },
+    {
+      "family": "selection",
+      "verified_pairs": 524,
+      "share_pct": 19.59
+    },
+    {
+      "family": "rollup",
+      "verified_pairs": 22,
+      "share_pct": 0.82
+    },
+    {
+      "family": "projection+selection",
+      "verified_pairs": 2653,
+      "share_pct": 99.18
+    }
+  ],
+  "relations_total": [
+    {
+      "cid": "all",
+      "lattice_pairs": 2677,
+      "query_text_pairs": 325,
+      "both": 262,
+      "lattice_refuted_curve": 47,
+      "query_text_refuted_curve": 0,
+      "lattice_refuted_readership": 69,
+      "query_text_refuted_readership": 0,
+      "lattice_refuted_pricing": 283,
+      "query_text_refuted_pricing": 0
+    }
+  ],
+  "causes": [
+    {
+      "workload": "sqlshare_main",
+      "attacker": "operational",
+      "cause": "target not for sale (infinite price)",
+      "distinct_plans": 1,
+      "distinct_targets": 1,
+      "mechanisms": "querymarket_viewcover_instance"
+    },
+    {
+      "workload": "sqlshare_main",
+      "attacker": "oracle",
+      "cause": "instance-specific derivation (refuted by the pricing support)",
+      "distinct_plans": 162,
+      "distinct_targets": 7,
+      "mechanisms": "chawla_cip;chawla_layering;chawla_lpip;chawla_uip;chawla_xos;qirana_shannon;qirana_weighted_coverage"
+    },
+    {
+      "workload": "sqlshare_main",
+      "attacker": "oracle",
+      "cause": "no bundle guarantee (information-arbitrage-free only)",
+      "distinct_plans": 3,
+      "distinct_targets": 3,
+      "mechanisms": "qirana_uniform_entropy_gain"
+    },
+    {
+      "workload": "sqlshare_main",
+      "attacker": "oracle",
+      "cause": "target not for sale (infinite price)",
+      "distinct_plans": 6,
+      "distinct_targets": 6,
+      "mechanisms": "querymarket_viewcover"
+    },
+    {
+      "workload": "tpch",
+      "attacker": "operational",
+      "cause": "no bundle guarantee (information-arbitrage-free only)",
+      "distinct_plans": 2,
+      "distinct_targets": 2,
+      "mechanisms": "qirana_uniform_entropy_gain"
+    }
+  ],
+  "seconds": 75.1
+}
