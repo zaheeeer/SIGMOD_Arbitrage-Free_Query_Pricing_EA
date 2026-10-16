@@ -1,0 +1,4 @@
+sampling,support_rows,assets_priceable,assets,median_conflict_set,distinct_price_levels,build_seconds
+size_proportional (as specified),1000,133,222,1.0,10,48.3
+readership_weighted,1000,182,222,67.0,43,1030.6
+qirana_updates_uniform,1000,176,222,19.0,48,346.9

@@ -1,0 +1,240 @@
+{
+  "markets_ok": 15,
+  "markets_too_small": 6,
+  "assets": 812,
+  "pairs": 2677,
+  "falsified": 40,
+  "markets_with_falsified": 4,
+  "welfare_wins_published": 12,
+  "revenue_wins_flat": 6,
+  "zero_priced_median_pct": 17.3,
+  "markets_all_zero_priced": 1,
+  "full_protocol_markets": 15,
+  "query_errors": {
+    "curve": {
+      "support_databases": 30000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "witness": {
+      "support_databases": 4000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "size": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "readership": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "qirana_uniform": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_474": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_1641": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_1641": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_4930": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_4930": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_459": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_459": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_4086": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_4086": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_7635": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_7635": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_8126": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_8126": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_7948": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_7948": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_2941": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_2941": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_270": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_270": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_6229": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_6229": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_6969": {
+      "support_databases": 300,
+      "with_query_errors": 3,
+      "query_errors": 21
+    },
+    "full_market_6969": {
+      "support_databases": 1000,
+      "with_query_errors": 5,
+      "query_errors": 35
+    },
+    "market_2610": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_2610": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_458": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_458": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "market_33": {
+      "support_databases": 300,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "full_market_33": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    }
+  },
+  "tiebreak_queries": {
+    "459": {
+      "2404": "tiebreak",
+      "2405": "tiebreak",
+      "9289": "tiebreak",
+      "9290": "tiebreak",
+      "9291": "tiebreak",
+      "9292": "tiebreak",
+      "9293": "tiebreak",
+      "9294": "tiebreak",
+      "9295": "tiebreak",
+      "9296": "tiebreak",
+      "9297": "tiebreak",
+      "9311": "tiebreak",
+      "9313": "tiebreak",
+      "9314": "tiebreak",
+      "9315": "tiebreak",
+      "9316": "tiebreak",
+      "9318": "tiebreak",
+      "9325": "tiebreak"
+    },
+    "270": {
+      "531": "tiebreak",
+      "532": "tiebreak",
+      "2650": "tiebreak"
+    },
+    "1115": {
+      "1123": "tiebreak"
+    },
+    "2610": {
+      "2611": "tiebreak",
+      "2612": "tiebreak",
+      "2613": "tiebreak",
+      "2614": "tiebreak",
+      "2615": "tiebreak",
+      "2616": "tiebreak",
+      "2617": "tiebreak",
+      "2618": "tiebreak",
+      "2619": "tiebreak",
+      "2620": "tiebreak",
+      "11083": "tiebreak",
+      "11086": "tiebreak",
+      "11087": "tiebreak",
+      "11088": "tiebreak",
+      "11090": "tiebreak",
+      "11091": "tiebreak",
+      "11092": "tiebreak",
+      "11093": "tiebreak",
+      "11096": "tiebreak"
+    },
+    "458": {
+      "9160": "tiebreak",
+      "9161": "tiebreak"
+    }
+  }
+}

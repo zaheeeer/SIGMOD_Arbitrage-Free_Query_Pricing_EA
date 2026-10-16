@@ -1,0 +1,334 @@
+{
+  "main_market_runs": 2880,
+  "main_market": {
+    "cid": 474,
+    "rank": 1,
+    "survivors": 234,
+    "assets": 222,
+    "claimed_edges": 1902,
+    "falsified_curve": 4,
+    "witnessed": 4,
+    "falsified_by_pricing_support": 69,
+    "false_edges_total": 73,
+    "false_edge_rate_pct": 3.84,
+    "clean_pairs_used": 1898,
+    "corr_size_vs_readership": -0.093,
+    "zero_priced_readership": 40,
+    "zero_priced_pricing_support": 46,
+    "pricing_support": "qirana_updates_uniform",
+    "cover_targets": 151,
+    "querymarket_catalogue": 180,
+    "build_cost_ratio": 21.3,
+    "main_arm": "same",
+    "plans_verified": 4075,
+    "plans_failed": 10,
+    "plans_failed_by_mechanism": {
+      "chawla_layering": 4,
+      "chawla_lpip": 6
+    },
+    "plans_verified_all_arms": 4075,
+    "alpha_at_grid_max_share": 0.0,
+    "neighbour_draws": {
+      "curve": 30000,
+      "witness": 4000,
+      "size": 1000,
+      "readership": 1000,
+      "qirana": 1010
+    },
+    "timings_s": {
+      "support set: size-proportional, 30000 neighbours (curve)": 0.05,
+      "witness search, 4000 neighbours": 0.03,
+      "support set: size-proportional, 1000 neighbours": 0.03,
+      "support set: readership-weighted, 1000 neighbours": 0.05,
+      "support set: Qirana updates (uniform tables), 1000 neighbours": 0.04,
+      "cover structure": 6.08,
+      "operational buyer structure (query texts only)": 0.29,
+      "fit, freeze, and evaluate runs": 1204.93
+    },
+    "operational": {
+      "in_fragment": 50,
+      "assets": 222,
+      "targets_with_sources": 42,
+      "semantic_pairs": 161,
+      "outside_fragment_reasons": {
+        "has group": 27,
+        "select list is not plain columns": 17,
+        "duplicate output names": 2,
+        "predicate outside the fragment": 12,
+        "has joins": 83,
+        "not a base table or alias": 21,
+        "not a plain SELECT": 2,
+        "subquery or aggregate": 6,
+        "no single table": 2
+      }
+    },
+    "query_errors": {
+      "curve": {
+        "support_databases": 30000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "witness": {
+        "support_databases": 4000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "size": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "readership": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "qirana_uniform": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      }
+    },
+    "tiebreak_queries": {}
+  },
+  "markets": {
+    "markets_ok": 15,
+    "markets_too_small": 6,
+    "assets": 812,
+    "pairs": 2677,
+    "falsified": 40,
+    "markets_with_falsified": 4,
+    "welfare_wins_published": 12,
+    "revenue_wins_flat": 6,
+    "zero_priced_median_pct": 17.3,
+    "markets_all_zero_priced": 1,
+    "full_protocol_markets": 15,
+    "query_errors": {
+      "curve": {
+        "support_databases": 30000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "witness": {
+        "support_databases": 4000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "size": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "readership": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "qirana_uniform": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_474": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_1641": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_1641": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_4930": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_4930": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_459": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_459": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_4086": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_4086": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_7635": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_7635": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_8126": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_8126": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_7948": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_7948": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_2941": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_2941": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_270": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_270": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_6229": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_6229": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_6969": {
+        "support_databases": 300,
+        "with_query_errors": 3,
+        "query_errors": 21
+      },
+      "full_market_6969": {
+        "support_databases": 1000,
+        "with_query_errors": 5,
+        "query_errors": 35
+      },
+      "market_2610": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_2610": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_458": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_458": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "market_33": {
+        "support_databases": 300,
+        "with_query_errors": 0,
+        "query_errors": 0
+      },
+      "full_market_33": {
+        "support_databases": 1000,
+        "with_query_errors": 0,
+        "query_errors": 0
+      }
+    },
+    "tiebreak_queries": {
+      "459": {
+        "2404": "tiebreak",
+        "2405": "tiebreak",
+        "9289": "tiebreak",
+        "9290": "tiebreak",
+        "9291": "tiebreak",
+        "9292": "tiebreak",
+        "9293": "tiebreak",
+        "9294": "tiebreak",
+        "9295": "tiebreak",
+        "9296": "tiebreak",
+        "9297": "tiebreak",
+        "9311": "tiebreak",
+        "9313": "tiebreak",
+        "9314": "tiebreak",
+        "9315": "tiebreak",
+        "9316": "tiebreak",
+        "9318": "tiebreak",
+        "9325": "tiebreak"
+      },
+      "270": {
+        "531": "tiebreak",
+        "532": "tiebreak",
+        "2650": "tiebreak"
+      },
+      "1115": {
+        "1123": "tiebreak"
+      },
+      "2610": {
+        "2611": "tiebreak",
+        "2612": "tiebreak",
+        "2613": "tiebreak",
+        "2614": "tiebreak",
+        "2615": "tiebreak",
+        "2616": "tiebreak",
+        "2617": "tiebreak",
+        "2618": "tiebreak",
+        "2619": "tiebreak",
+        "2620": "tiebreak",
+        "11083": "tiebreak",
+        "11086": "tiebreak",
+        "11087": "tiebreak",
+        "11088": "tiebreak",
+        "11090": "tiebreak",
+        "11091": "tiebreak",
+        "11092": "tiebreak",
+        "11093": "tiebreak",
+        "11096": "tiebreak"
+      },
+      "458": {
+        "9160": "tiebreak",
+        "9161": "tiebreak"
+      }
+    }
+  }
+}
