@@ -1,0 +1,3 @@
+workload,donors,rejected,build_seconds,support_n,assets,assets_priceable,zero_priced,distinct_price_levels,median_conflict_set,lattice_pairs,lattice_pairs_refuted
+tpch,distinct,0,4.501445600006264,400,368,344,24,53,7.0,1046,0
+tpch,frequency,0,5.1829098999878624,400,368,337,31,54,7.5,1046,0

@@ -1,0 +1,16 @@
+workload,mechanism,runs,max_abs_diff_revenue_naive_norm,max_abs_diff_revenue_strategic_op_norm,max_abs_diff_welfare_strategic_op_norm,max_abs_diff_comb_violation_rate_op
+tpch,chawla_cip,20,0.0,0.0,0.0,0.0
+tpch,chawla_layering,20,0.0,0.0,0.0,0.0
+tpch,chawla_lpip,20,0.0005208066979415782,0.0005208066979415782,0.0007196078677655926,0.0
+tpch,chawla_ubp,20,0.0,0.0,0.0,0.0
+tpch,chawla_uip,20,0.0,0.0,0.0,0.0
+tpch,chawla_xos,20,0.0009230285753226153,0.0009230285753226153,0.0005162137356938823,0.0
+tpch,compute_metered,20,0.0,0.0,0.0,0.0
+tpch,monopoly_per_asset,20,0.0,0.0,0.0,0.0
+tpch,monotone_constrained,20,0.0,0.0,0.0,0.0
+tpch,qirana_shannon,20,0.0,0.0,0.0,0.0
+tpch,qirana_uniform_entropy_gain,20,0.0,0.0,0.0,0.0
+tpch,qirana_weighted_coverage,20,0.0,0.0,0.0,0.0
+tpch,querymarket_viewcover,20,0.0,0.0,0.0,0.0
+tpch,size_proportional,20,0.0,0.0,0.0,0.0
+tpch,uniform,20,0.0,0.0,0.0,0.0

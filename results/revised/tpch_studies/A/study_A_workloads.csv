@@ -1,0 +1,3 @@
+workload,support,queries,support_n,items_used,empty_edges,empty_edge_share,edge_size_mean,edge_size_median,edge_size_max,distinct_edges,pairs_measured,mean_jaccard,nested_share,equal_share,disjoint_share,seconds
+tpch,deletions,368,400,400,62,0.1684782608695652,15.847826086956522,4.0,400.0,158,20000,0.0114953923069208,0.08655,0.00395,0.902,244.4
+tpch,updates,368,400,376,24,0.0652173913043478,19.535326086956523,7.0,376.0,212,20000,0.0152141233964371,0.06,0.00225,0.77475,278.1
