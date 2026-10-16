@@ -1,0 +1,91 @@
+{
+  "cid": 474,
+  "rank": 1,
+  "survivors": 234,
+  "assets": 222,
+  "claimed_edges": 1902,
+  "falsified_curve": 4,
+  "witnessed": 4,
+  "falsified_by_pricing_support": 69,
+  "false_edges_total": 73,
+  "false_edge_rate_pct": 3.84,
+  "clean_pairs_used": 1898,
+  "corr_size_vs_readership": -0.093,
+  "zero_priced_readership": 40,
+  "zero_priced_pricing_support": 46,
+  "pricing_support": "qirana_updates_uniform",
+  "cover_targets": 151,
+  "querymarket_catalogue": 180,
+  "build_cost_ratio": 21.3,
+  "main_arm": "same",
+  "plans_verified": 4075,
+  "plans_failed": 10,
+  "plans_failed_by_mechanism": {
+    "chawla_layering": 4,
+    "chawla_lpip": 6
+  },
+  "plans_verified_all_arms": 4075,
+  "alpha_at_grid_max_share": 0.0,
+  "neighbour_draws": {
+    "curve": 30000,
+    "witness": 4000,
+    "size": 1000,
+    "readership": 1000,
+    "qirana": 1010
+  },
+  "timings_s": {
+    "support set: size-proportional, 30000 neighbours (curve)": 0.05,
+    "witness search, 4000 neighbours": 0.03,
+    "support set: size-proportional, 1000 neighbours": 0.03,
+    "support set: readership-weighted, 1000 neighbours": 0.05,
+    "support set: Qirana updates (uniform tables), 1000 neighbours": 0.04,
+    "cover structure": 6.08,
+    "operational buyer structure (query texts only)": 0.29,
+    "fit, freeze, and evaluate runs": 1204.93
+  },
+  "operational": {
+    "in_fragment": 50,
+    "assets": 222,
+    "targets_with_sources": 42,
+    "semantic_pairs": 161,
+    "outside_fragment_reasons": {
+      "has group": 27,
+      "select list is not plain columns": 17,
+      "duplicate output names": 2,
+      "predicate outside the fragment": 12,
+      "has joins": 83,
+      "not a base table or alias": 21,
+      "not a plain SELECT": 2,
+      "subquery or aggregate": 6,
+      "no single table": 2
+    }
+  },
+  "query_errors": {
+    "curve": {
+      "support_databases": 30000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "witness": {
+      "support_databases": 4000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "size": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "readership": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    },
+    "qirana_uniform": {
+      "support_databases": 1000,
+      "with_query_errors": 0,
+      "query_errors": 0
+    }
+  },
+  "tiebreak_queries": {}
+}
