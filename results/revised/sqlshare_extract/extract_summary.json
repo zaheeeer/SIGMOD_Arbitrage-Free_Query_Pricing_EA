@@ -1,0 +1,434 @@
+{
+  "fingerprint": "4e66aafb0636",
+  "markets": [
+    {
+      "rank": 1,
+      "cid": 474,
+      "assets": 222,
+      "lattice_pairs": 1902,
+      "query_text_pairs": 161,
+      "both": 148,
+      "lattice_refuted_by_pricing": 248,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 2,
+      "cid": 1641,
+      "assets": 81,
+      "lattice_pairs": 18,
+      "query_text_pairs": 2,
+      "both": 0,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 3,
+      "cid": 4930,
+      "assets": 81,
+      "lattice_pairs": 265,
+      "query_text_pairs": 93,
+      "both": 91,
+      "lattice_refuted_by_pricing": 27,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 4,
+      "cid": 459,
+      "assets": 47,
+      "lattice_pairs": 116,
+      "query_text_pairs": 0,
+      "both": 0,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 5,
+      "cid": 4086,
+      "assets": 64,
+      "lattice_pairs": 3,
+      "query_text_pairs": 10,
+      "both": 0,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 6,
+      "cid": 7635,
+      "assets": 60,
+      "lattice_pairs": 110,
+      "query_text_pairs": 0,
+      "both": 0,
+      "lattice_refuted_by_pricing": 7,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 7,
+      "cid": 8126,
+      "assets": 55,
+      "lattice_pairs": 76,
+      "query_text_pairs": 9,
+      "both": 9,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 8,
+      "cid": 7948,
+      "assets": 48,
+      "lattice_pairs": 42,
+      "query_text_pairs": 4,
+      "both": 4,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 9,
+      "cid": 2941,
+      "assets": 18,
+      "lattice_pairs": 4,
+      "query_text_pairs": 34,
+      "both": 4,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 10,
+      "cid": 270,
+      "assets": 19,
+      "lattice_pairs": 16,
+      "query_text_pairs": 0,
+      "both": 0,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 11,
+      "cid": 6229,
+      "assets": 33,
+      "lattice_pairs": 53,
+      "query_text_pairs": 0,
+      "both": 0,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 12,
+      "cid": 6969,
+      "assets": 31,
+      "lattice_pairs": 23,
+      "query_text_pairs": 5,
+      "both": 5,
+      "lattice_refuted_by_pricing": 1,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 14,
+      "cid": 2610,
+      "assets": 27,
+      "lattice_pairs": 20,
+      "query_text_pairs": 0,
+      "both": 0,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 15,
+      "cid": 458,
+      "assets": 18,
+      "lattice_pairs": 27,
+      "query_text_pairs": 5,
+      "both": 1,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    },
+    {
+      "rank": 16,
+      "cid": 33,
+      "assets": 8,
+      "lattice_pairs": 2,
+      "query_text_pairs": 2,
+      "both": 0,
+      "lattice_refuted_by_pricing": 0,
+      "query_text_refuted_by_pricing": 0
+    }
+  ],
+  "examples": [
+    {
+      "target": 8717,
+      "sources": [
+        "476",
+        "477",
+        "8566",
+        "8705",
+        "8706",
+        "8707",
+        "8710",
+        "8713",
+        "8714",
+        "8715",
+        "8716",
+        "8724",
+        "8735",
+        "8758",
+        "8759",
+        "8760",
+        "8761",
+        "8767",
+        "8770",
+        "8806",
+        "8844"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "chawla_uip",
+        "qirana_shannon",
+        "qirana_weighted_coverage"
+      ],
+      "plans": 60
+    },
+    {
+      "target": 8765,
+      "sources": [
+        "476",
+        "477",
+        "8566",
+        "8705",
+        "8706",
+        "8707",
+        "8710",
+        "8713",
+        "8714",
+        "8715",
+        "8716",
+        "8724",
+        "8735",
+        "8758",
+        "8759",
+        "8760",
+        "8761",
+        "8767",
+        "8770",
+        "8806",
+        "8844"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "chawla_uip",
+        "qirana_shannon",
+        "qirana_weighted_coverage"
+      ],
+      "plans": 60
+    },
+    {
+      "target": 8768,
+      "sources": [
+        "476",
+        "477",
+        "8566",
+        "8705",
+        "8706",
+        "8707",
+        "8710",
+        "8713",
+        "8714",
+        "8715",
+        "8716",
+        "8724",
+        "8735",
+        "8758",
+        "8759",
+        "8760",
+        "8761",
+        "8767",
+        "8770",
+        "8806",
+        "8844"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "chawla_uip",
+        "qirana_shannon",
+        "qirana_weighted_coverage"
+      ],
+      "plans": 60
+    },
+    {
+      "target": 8759,
+      "sources": [
+        "8522"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "querymarket_viewcover"
+      ],
+      "plans": 20
+    },
+    {
+      "target": 8761,
+      "sources": [
+        "8522"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "querymarket_viewcover"
+      ],
+      "plans": 20
+    },
+    {
+      "target": 8767,
+      "sources": [
+        "8522"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "querymarket_viewcover"
+      ],
+      "plans": 20
+    },
+    {
+      "target": 8770,
+      "sources": [
+        "8522"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "querymarket_viewcover"
+      ],
+      "plans": 20
+    },
+    {
+      "target": 9014,
+      "sources": [
+        "8638"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "querymarket_viewcover"
+      ],
+      "plans": 20
+    },
+    {
+      "target": 9016,
+      "sources": [
+        "8638"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "querymarket_viewcover"
+      ],
+      "plans": 20
+    },
+    {
+      "target": 8709,
+      "sources": [
+        "8534",
+        "8590",
+        "8638",
+        "8646",
+        "8647",
+        "8648",
+        "8649",
+        "8650",
+        "8651",
+        "8652",
+        "8679",
+        "8680",
+        "8685",
+        "8690",
+        "8691",
+        "8874",
+        "8875",
+        "8878",
+        "8879",
+        "8957",
+        "9014",
+        "9016",
+        "9025"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "chawla_lpip"
+      ],
+      "plans": 1
+    },
+    {
+      "target": 8765,
+      "sources": [
+        "476",
+        "477",
+        "8566",
+        "8705",
+        "8706",
+        "8707",
+        "8709",
+        "8710",
+        "8713",
+        "8714",
+        "8715",
+        "8716",
+        "8717",
+        "8724",
+        "8726",
+        "8735",
+        "8752",
+        "8758",
+        "8759",
+        "8760",
+        "8761",
+        "8767",
+        "8770",
+        "8806",
+        "8844",
+        "8938",
+        "8939",
+        "8958",
+        "8959"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "chawla_lpip"
+      ],
+      "plans": 1
+    },
+    {
+      "target": 8768,
+      "sources": [
+        "476",
+        "477",
+        "8566",
+        "8705",
+        "8706",
+        "8707",
+        "8709",
+        "8710",
+        "8713",
+        "8714",
+        "8715",
+        "8716",
+        "8717",
+        "8724",
+        "8726",
+        "8735",
+        "8752",
+        "8758",
+        "8759",
+        "8760",
+        "8761",
+        "8767",
+        "8770",
+        "8806",
+        "8844",
+        "8938",
+        "8939",
+        "8958",
+        "8959"
+      ],
+      "attacker": "oracle",
+      "mechanisms": [
+        "chawla_lpip"
+      ],
+      "plans": 1
+    }
+  ],
+  "seconds": 71.6
+}

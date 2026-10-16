@@ -1,0 +1,5649 @@
+{
+  "cid": 474,
+  "attacker": "oracle",
+  "mechanisms_with_gain_1": [
+    "chawla_uip",
+    "qirana_shannon",
+    "qirana_weighted_coverage"
+  ],
+  "plans_logged": 60,
+  "queries": {
+    "8768": {
+      "role": "target",
+      "owner": "446",
+      "sql": "SELECT DISTINCT doc.Station FROM \"446\".\"V2_GDGT Data for Francois database.csv\" AS gdgt FULL OUTER JOIN \"446\".\"table_V2_Carlson_carbon data_GeoMICS.csv\" AS doc ON (doc.\"Depth..m.\" = gdgt.\"Depth..m.\" AND doc.Station = gdgt.Station) FULL OUTER JOIN \"446\".\"V2_O2_measurements_final.csv\" AS oxy ON doc.\"Depth..m.\" = oxy.\"Depth\" AND doc.Station = oxy.Station",
+      "in_fragment": false,
+      "fragment_reason": "has joins",
+      "conflict_set": [
+        97,
+        128,
+        190,
+        322,
+        363,
+        511,
+        538,
+        558,
+        582,
+        961,
+        984
+      ],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 11.0,
+        "qirana_shannon": 0.08735191991631619,
+        "querymarket_viewcover": 855.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.3471308950527417
+      }
+    },
+    "476": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT (Station) FROM \"446\".\"GeoMICS_key.csv\"",
+      "in_fragment": false,
+      "fragment_reason": "select list is not plain columns",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 638.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "477": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT (Station) FROM \"446\".\"GeoMICS_key.csv\" WHERE Source = 'McL'",
+      "in_fragment": false,
+      "fragment_reason": "select list is not plain columns",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 4.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 638.0,
+        "querymarket_viewcover_instance": 135.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8566": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT * FROM \"446\".\"GeoMICS_key.csv\" WHERE Label > 800",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 6.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 638.0,
+        "querymarket_viewcover_instance": 665.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8705": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT Station FROM \"446\".\"Merge\"",
+      "in_fragment": false,
+      "fragment_reason": "not a base table or alias",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 1960.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8706": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT Station FROM \"446\".\"V2_GDGT Data for Francois database.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 4.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 135.0,
+        "querymarket_viewcover_instance": 135.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8707": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT Station FROM \"446\".\"V2_O2_measurements_final.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 855.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8710": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT Station FROM \"446\".\"table_V2_GeoMICS_data_PM_BVM_Lipids.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 467.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8713": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT Station FROM \"446\".\"Merge\"",
+      "in_fragment": false,
+      "fragment_reason": "not a base table or alias",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 1960.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8714": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT Station FROM \"446\".\"V2_O2_measurements_final.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 855.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8715": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT carbon.Station FROM \"446\".\"V2_GDGT Data for Francois database.csv\" AS gdgt FULL OUTER JOIN \"446\".\"V2_Carlson_carbon data_GeoMICS.csv\" AS carbon ON gdgt.\"Depth..m.\" = carbon.\"Depth..m.\"",
+      "in_fragment": false,
+      "fragment_reason": "has joins",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 773.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8716": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT carbon.Station FROM \"446\".\"V2_GDGT Data for Francois database.csv\" AS gdgt FULL OUTER JOIN \"446\".\"V2_Carlson_carbon data_GeoMICS.csv\" AS carbon ON gdgt.\"Depth..m.\" = carbon.\"Depth..m.\" FULL OUTER JOIN \"446\".\"V2_O2_measurements_final.csv\" AS o2 ON gdgt.\"Depth..m.\" = o2.\"Depth\" OR carbon.\"Depth..m.\" = o2.\"Depth\"",
+      "in_fragment": false,
+      "fragment_reason": "has joins",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 855.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8724": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT Station FROM \"446\".\"Full_Outer_join_gdgt_doc_oxygen\"",
+      "in_fragment": false,
+      "fragment_reason": "not a base table or alias",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 1493.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8735": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT DISTINCT Station FROM \"446\".\"Merge\"",
+      "in_fragment": false,
+      "fragment_reason": "not a base table or alias",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 1960.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8758": {
+      "role": "source",
+      "owner": "446",
+      "sql": "/* SELECT gdgt.[Depth..m.], doc.[Depth..m.], gdgt.[Station], doc.[Station] FROM */ /*   [446].[V2_GDGT Data for Francois database.csv] AS gdgt FULL OUTER JOIN */ /*   [446].[table_V2_Carlson_carbon data_GeoMICS.csv] AS doc */ /*   ON doc.[Depth..m.] = gdgt.[Depth..m.] AND doc.Station = gdgt.Station */ /* FULL OUTER JOIN [446].[V2_O2_measurements_final.csv] AS oxy */ /* ON doc.[Depth..m.] = oxy.[Depth] AND doc.Station = oxy.Station */ SELECT DISTINCT /* Depth as [Depth..m.], */ Station FROM \"446\".\"V2_O2_measurements_final.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 855.0,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8759": {
+      "role": "source",
+      "owner": "446",
+      "sql": "/* SELECT gdgt.[Depth..m.], doc.[Depth..m.], gdgt.[Station], doc.[Station] FROM */ /*   [446].[V2_GDGT Data for Francois database.csv] AS gdgt FULL OUTER JOIN */ /*   [446].[table_V2_Carlson_carbon data_GeoMICS.csv] AS doc */ /*   ON doc.[Depth..m.] = gdgt.[Depth..m.] AND doc.Station = gdgt.Station */ /* FULL OUTER JOIN [446].[V2_O2_measurements_final.csv] AS oxy */ /* ON doc.[Depth..m.] = oxy.[Depth] AND doc.Station = oxy.Station */ SELECT DISTINCT /* Depth as [Depth..m.], */ Station FROM \"446\".\"table_V2_Carlson_carbon data_GeoMICS.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": Infinity,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8760": {
+      "role": "source",
+      "owner": "446",
+      "sql": "/* SELECT gdgt.[Depth..m.], doc.[Depth..m.], gdgt.[Station], doc.[Station] FROM */ /*   [446].[V2_GDGT Data for Francois database.csv] AS gdgt FULL OUTER JOIN */ /*   [446].[table_V2_Carlson_carbon data_GeoMICS.csv] AS doc */ /*   ON doc.[Depth..m.] = gdgt.[Depth..m.] AND doc.Station = gdgt.Station */ /* FULL OUTER JOIN [446].[V2_O2_measurements_final.csv] AS oxy */ /* ON doc.[Depth..m.] = oxy.[Depth] AND doc.Station = oxy.Station */ SELECT DISTINCT /* Depth as [Depth..m.], */ Station FROM \"446\".\"V2_GDGT Data for Francois database.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 4.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": 135.0,
+        "querymarket_viewcover_instance": 135.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8761": {
+      "role": "source",
+      "owner": "446",
+      "sql": "/* SELECT gdgt.[Depth..m.], doc.[Depth..m.], gdgt.[Station], doc.[Station] FROM */ /*   [446].[V2_GDGT Data for Francois database.csv] AS gdgt FULL OUTER JOIN */ /*   [446].[table_V2_Carlson_carbon data_GeoMICS.csv] AS doc */ /*   ON doc.[Depth..m.] = gdgt.[Depth..m.] AND doc.Station = gdgt.Station */ /* FULL OUTER JOIN [446].[V2_O2_measurements_final.csv] AS oxy */ /* ON doc.[Depth..m.] = oxy.[Depth] AND doc.Station = oxy.Station */ SELECT DISTINCT /* Depth as [Depth..m.], */ Station FROM \"446\".\"table_V2_Carlson_carbon data_GeoMICS.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": Infinity,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8767": {
+      "role": "source",
+      "owner": "446",
+      "sql": "/* SELECT gdgt.[Depth..m.], doc.[Depth..m.], gdgt.[Station], doc.[Station] FROM */ /*   [446].[V2_GDGT Data for Francois database.csv] AS gdgt FULL OUTER JOIN */ /*   [446].[table_V2_Carlson_carbon data_GeoMICS.csv] AS doc */ /*   ON doc.[Depth..m.] = gdgt.[Depth..m.] AND doc.Station = gdgt.Station */ /* FULL OUTER JOIN [446].[V2_O2_measurements_final.csv] AS oxy */ /* ON doc.[Depth..m.] = oxy.[Depth] AND doc.Station = oxy.Station */ SELECT DISTINCT /* distinct [Depth..m.] */ Station FROM \"446\".\"table_V2_Carlson_carbon data_GeoMICS.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": Infinity,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8770": {
+      "role": "source",
+      "owner": "446",
+      "sql": "/* SELECT gdgt.[Depth..m.], doc.[Depth..m.], gdgt.[Station], doc.[Station] FROM */ /*   [446].[V2_GDGT Data for Francois database.csv] AS gdgt FULL OUTER JOIN */ /*   [446].[table_V2_Carlson_carbon data_GeoMICS.csv] AS doc */ /*   ON doc.[Depth..m.] = gdgt.[Depth..m.] AND doc.Station = gdgt.Station */ /* FULL OUTER JOIN [446].[V2_O2_measurements_final.csv] AS oxy */ /* ON doc.[Depth..m.] = oxy.[Depth] AND doc.Station = oxy.Station */ SELECT DISTINCT /* distinct [Depth..m.] */ Station FROM \"446\".\"table_V2_Carlson_carbon data_GeoMICS.csv\"",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 7.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": Infinity,
+        "querymarket_viewcover_instance": 82.0,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8806": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT * FROM \"446\".\"V2_LineP_nutrients_formatted.csv\" WHERE Station = 'P1'",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 17.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": Infinity,
+        "querymarket_viewcover_instance": Infinity,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    },
+    "8844": {
+      "role": "source",
+      "owner": "446",
+      "sql": "SELECT * FROM \"446\".\"V2_LineP_nutrients_formatted.csv\" WHERE station = 'P1'",
+      "in_fragment": true,
+      "fragment_reason": "",
+      "conflict_set": [],
+      "scores": {
+        "uniform": 1.0,
+        "size_proportional": 17.0,
+        "qirana_weighted_coverage": 0.0,
+        "qirana_shannon": 0.0,
+        "querymarket_viewcover": Infinity,
+        "querymarket_viewcover_instance": Infinity,
+        "qirana_uniform_entropy_gain": 0.0
+      }
+    }
+  },
+  "pairs": [
+    {
+      "src": "476",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "477",
+      "lattice_family": "",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8566",
+      "lattice_family": "",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8705",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8706",
+      "lattice_family": "",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8707",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8710",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8713",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8714",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8715",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8716",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8724",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8735",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8758",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8759",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8760",
+      "lattice_family": "",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8761",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8767",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8770",
+      "lattice_family": "projection",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8806",
+      "lattice_family": "",
+      "refuting_pricing": 11
+    },
+    {
+      "src": "8844",
+      "lattice_family": "",
+      "refuting_pricing": 11
+    }
+  ],
+  "support_n": 1000,
+  "target_not_covered_by_sources": [
+    97,
+    128,
+    190,
+    322,
+    363,
+    511,
+    538,
+    558,
+    582,
+    961,
+    984
+  ],
+  "answers_on_D": {
+    "8768": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "476": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "477": {
+      "rows": 4,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8566": {
+      "rows": 6,
+      "columns": [
+        "event",
+        "latitude..decimal.deg.",
+        "longitude..decimal.deg.",
+        "station",
+        "depth..m.",
+        "label",
+        "source"
+      ],
+      "data": [
+        [
+          "1001",
+          48.817,
+          231.334,
+          "P8",
+          5,
+          801,
+          "SurfacePump"
+        ],
+        [
+          "1010",
+          48.743,
+          232.333,
+          "P6",
+          5,
+          802,
+          "SurfacePump"
+        ],
+        [
+          "1019",
+          48.651,
+          233.0,
+          "P4",
+          5,
+          803,
+          "SurfacePump"
+        ],
+        [
+          "1025",
+          48.651,
+          233.0,
+          "P4",
+          45,
+          2010,
+          "McL"
+        ],
+        [
+          "1025",
+          48.651,
+          233.0,
+          "P4",
+          65,
+          2011,
+          "McL"
+        ],
+        [
+          "1040",
+          48.575,
+          234.5,
+          "P1",
+          5,
+          804,
+          "SurfacePump"
+        ]
+      ],
+      "truncated": false
+    },
+    "8705": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8706": {
+      "rows": 4,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8707": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8710": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8713": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8714": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8715": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8716": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8724": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8735": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8758": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8759": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8760": {
+      "rows": 4,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8761": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8767": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8770": {
+      "rows": 7,
+      "columns": [
+        "station"
+      ],
+      "data": [
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4"
+        ],
+        [
+          "P5"
+        ],
+        [
+          "P6"
+        ],
+        [
+          "P8"
+        ]
+      ],
+      "truncated": false
+    },
+    "8806": {
+      "rows": 17,
+      "columns": [
+        "event",
+        "latitude..decimal.deg.",
+        "longitude..decimal.deg.",
+        "station",
+        "depth..m.",
+        "bottle.",
+        "source",
+        "replicate",
+        "x..po4..",
+        "x..si.oh.4..",
+        "x..no3..",
+        "x..no2..",
+        "x..nh4.."
+      ],
+      "data": [
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          40,
+          2264,
+          "Niskin",
+          "B",
+          1.16,
+          13.19,
+          7.71,
+          0.28,
+          1.86
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          40,
+          2265,
+          "Niskin",
+          "C",
+          1.03,
+          14.4,
+          6.49,
+          0.25,
+          1.95
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          40,
+          2266,
+          "Niskin",
+          "A",
+          1.15,
+          12.62,
+          6.89,
+          0.26,
+          1.76
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          100,
+          2261,
+          "Niskin",
+          "C",
+          2.28,
+          47.92,
+          28.42,
+          0.28,
+          0.63
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          100,
+          2262,
+          "Niskin",
+          "A",
+          2.42,
+          44.66,
+          29.13,
+          0.28,
+          0.65
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          100,
+          2263,
+          "Niskin",
+          "B",
+          2.44,
+          45.11,
+          29.45,
+          0.28,
+          0.56
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          15,
+          2252,
+          "Niskin",
+          "C",
+          0.46,
+          7.76,
+          2.26,
+          0.08,
+          0.69
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          15,
+          2253,
+          "Niskin",
+          "B",
+          0.5,
+          6.7,
+          3.07,
+          0.03,
+          0.56
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          15,
+          2254,
+          "Niskin",
+          "A",
+          0.5,
+          7.04,
+          3.07,
+          0.03,
+          0.58
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          30,
+          2258,
+          "Niskin",
+          "B",
+          1.61,
+          22.08,
+          18.15,
+          0.3,
+          0.75
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          30,
+          2259,
+          "Niskin",
+          "C",
+          1.47,
+          24.59,
+          17.49,
+          0.28,
+          0.73
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          30,
+          2260,
+          "Niskin",
+          "A",
+          1.62,
+          22.08,
+          18.22,
+          0.3,
+          0.64
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          70,
+          2255,
+          "Niskin",
+          "B",
+          1.28,
+          15.69,
+          10.31,
+          0.17,
+          1.74
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          70,
+          2257,
+          "Niskin",
+          "A",
+          1.28,
+          15.35,
+          10.3,
+          0.17,
+          1.77
+        ],
+        [
+          1040,
+          48.57483333,
+          234.5003333,
+          "P1",
+          0,
+          2249,
+          "SurfacePump",
+          "B",
+          0.19,
+          2.8,
+          0.33,
+          0.0,
+          0.07
+        ],
+        [
+          1040,
+          48.57483333,
+          234.5003333,
+          "P1",
+          0,
+          2250,
+          "SurfacePump",
+          "C",
+          0.22,
+          4.75,
+          0.0,
+          0.09,
+          0.26
+        ],
+        [
+          1040,
+          48.57483333,
+          234.5003333,
+          "P1",
+          0,
+          2251,
+          "SurfacePump",
+          "A",
+          0.2,
+          2.8,
+          0.33,
+          0.01,
+          0.1
+        ]
+      ],
+      "truncated": false
+    },
+    "8844": {
+      "rows": 17,
+      "columns": [
+        "event",
+        "latitude..decimal.deg.",
+        "longitude..decimal.deg.",
+        "station",
+        "depth..m.",
+        "bottle.",
+        "source",
+        "replicate",
+        "x..po4..",
+        "x..si.oh.4..",
+        "x..no3..",
+        "x..no2..",
+        "x..nh4.."
+      ],
+      "data": [
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          40,
+          2264,
+          "Niskin",
+          "B",
+          1.16,
+          13.19,
+          7.71,
+          0.28,
+          1.86
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          40,
+          2265,
+          "Niskin",
+          "C",
+          1.03,
+          14.4,
+          6.49,
+          0.25,
+          1.95
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          40,
+          2266,
+          "Niskin",
+          "A",
+          1.15,
+          12.62,
+          6.89,
+          0.26,
+          1.76
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          100,
+          2261,
+          "Niskin",
+          "C",
+          2.28,
+          47.92,
+          28.42,
+          0.28,
+          0.63
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          100,
+          2262,
+          "Niskin",
+          "A",
+          2.42,
+          44.66,
+          29.13,
+          0.28,
+          0.65
+        ],
+        [
+          1037,
+          48.57483333,
+          234.5003333,
+          "P1",
+          100,
+          2263,
+          "Niskin",
+          "B",
+          2.44,
+          45.11,
+          29.45,
+          0.28,
+          0.56
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          15,
+          2252,
+          "Niskin",
+          "C",
+          0.46,
+          7.76,
+          2.26,
+          0.08,
+          0.69
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          15,
+          2253,
+          "Niskin",
+          "B",
+          0.5,
+          6.7,
+          3.07,
+          0.03,
+          0.56
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          15,
+          2254,
+          "Niskin",
+          "A",
+          0.5,
+          7.04,
+          3.07,
+          0.03,
+          0.58
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          30,
+          2258,
+          "Niskin",
+          "B",
+          1.61,
+          22.08,
+          18.15,
+          0.3,
+          0.75
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          30,
+          2259,
+          "Niskin",
+          "C",
+          1.47,
+          24.59,
+          17.49,
+          0.28,
+          0.73
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          30,
+          2260,
+          "Niskin",
+          "A",
+          1.62,
+          22.08,
+          18.22,
+          0.3,
+          0.64
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          70,
+          2255,
+          "Niskin",
+          "B",
+          1.28,
+          15.69,
+          10.31,
+          0.17,
+          1.74
+        ],
+        [
+          1038,
+          48.57483333,
+          234.5003333,
+          "P1",
+          70,
+          2257,
+          "Niskin",
+          "A",
+          1.28,
+          15.35,
+          10.3,
+          0.17,
+          1.77
+        ],
+        [
+          1040,
+          48.57483333,
+          234.5003333,
+          "P1",
+          0,
+          2249,
+          "SurfacePump",
+          "B",
+          0.19,
+          2.8,
+          0.33,
+          0.0,
+          0.07
+        ],
+        [
+          1040,
+          48.57483333,
+          234.5003333,
+          "P1",
+          0,
+          2250,
+          "SurfacePump",
+          "C",
+          0.22,
+          4.75,
+          0.0,
+          0.09,
+          0.26
+        ],
+        [
+          1040,
+          48.57483333,
+          234.5003333,
+          "P1",
+          0,
+          2251,
+          "SurfacePump",
+          "A",
+          0.2,
+          2.8,
+          0.33,
+          0.01,
+          0.1
+        ]
+      ],
+      "truncated": false
+    }
+  },
+  "support_databases": [
+    {
+      "support_index": 97,
+      "table": [
+        "446",
+        "V2_O2_measurements_final.csv"
+      ],
+      "spec": [
+        "row",
+        41,
+        [
+          1,
+          2,
+          3,
+          6,
+          8,
+          13,
+          15,
+          18
+        ],
+        [
+          66,
+          14,
+          1,
+          6,
+          48,
+          55,
+          10,
+          1
+        ]
+      ],
+      "in_target_conflict_set": true,
+      "in_source_conflict_sets": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "changes": [
+        {
+          "rowid": 41,
+          "column": "Label",
+          "old": 517,
+          "new": 643
+        },
+        {
+          "rowid": 41,
+          "column": "Event",
+          "old": 1018,
+          "new": 1033
+        },
+        {
+          "rowid": 41,
+          "column": "Latitude",
+          "old": 48.692,
+          "new": 48.6
+        },
+        {
+          "rowid": 41,
+          "column": "Depth",
+          "old": 5,
+          "new": 33
+        },
+        {
+          "rowid": 41,
+          "column": "O2_corr_mL.L",
+          "old": 6.155393654,
+          "new": 5.101551727
+        },
+        {
+          "rowid": 41,
+          "column": "SD_O2sat_percent",
+          "old": 14.8461966,
+          "new": 13.08495458
+        },
+        {
+          "rowid": 41,
+          "column": "SD_diffO2sat_umole.L",
+          "old": 41.91501136,
+          "new": 2.81846427
+        },
+        {
+          "rowid": 41,
+          "column": "comments",
+          "old": null,
+          "new": "O2_corr = (CTD_O2-intercept)/slope"
+        }
+      ],
+      "answer_changed": {
+        "8768": true,
+        "476": false,
+        "477": false,
+        "8566": false,
+        "8705": false,
+        "8706": false,
+        "8707": false,
+        "8710": false,
+        "8713": false,
+        "8714": false,
+        "8715": false,
+        "8716": false,
+        "8724": false,
+        "8735": false,
+        "8758": false,
+        "8759": false,
+        "8760": false,
+        "8761": false,
+        "8767": false,
+        "8770": false,
+        "8806": false,
+        "8844": false
+      },
+      "answers": {
+        "8768": {
+          "rows": 8,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ],
+            [
+              null
+            ]
+          ],
+          "truncated": false
+        },
+        "476": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "477": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8566": {
+          "rows": 6,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "label",
+            "source"
+          ],
+          "data": [
+            [
+              "1001",
+              48.817,
+              231.334,
+              "P8",
+              5,
+              801,
+              "SurfacePump"
+            ],
+            [
+              "1010",
+              48.743,
+              232.333,
+              "P6",
+              5,
+              802,
+              "SurfacePump"
+            ],
+            [
+              "1019",
+              48.651,
+              233.0,
+              "P4",
+              5,
+              803,
+              "SurfacePump"
+            ],
+            [
+              "1025",
+              48.651,
+              233.0,
+              "P4",
+              45,
+              2010,
+              "McL"
+            ],
+            [
+              "1025",
+              48.651,
+              233.0,
+              "P4",
+              65,
+              2011,
+              "McL"
+            ],
+            [
+              "1040",
+              48.575,
+              234.5,
+              "P1",
+              5,
+              804,
+              "SurfacePump"
+            ]
+          ],
+          "truncated": false
+        },
+        "8705": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8706": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8707": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8710": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8713": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8714": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8715": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8716": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8724": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8735": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8758": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8759": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8760": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8761": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8767": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8770": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8806": {
+          "rows": 17,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "bottle.",
+            "source",
+            "replicate",
+            "x..po4..",
+            "x..si.oh.4..",
+            "x..no3..",
+            "x..no2..",
+            "x..nh4.."
+          ],
+          "data": [
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2264,
+              "Niskin",
+              "B",
+              1.16,
+              13.19,
+              7.71,
+              0.28,
+              1.86
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2265,
+              "Niskin",
+              "C",
+              1.03,
+              14.4,
+              6.49,
+              0.25,
+              1.95
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2266,
+              "Niskin",
+              "A",
+              1.15,
+              12.62,
+              6.89,
+              0.26,
+              1.76
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2261,
+              "Niskin",
+              "C",
+              2.28,
+              47.92,
+              28.42,
+              0.28,
+              0.63
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2262,
+              "Niskin",
+              "A",
+              2.42,
+              44.66,
+              29.13,
+              0.28,
+              0.65
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2263,
+              "Niskin",
+              "B",
+              2.44,
+              45.11,
+              29.45,
+              0.28,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2252,
+              "Niskin",
+              "C",
+              0.46,
+              7.76,
+              2.26,
+              0.08,
+              0.69
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2253,
+              "Niskin",
+              "B",
+              0.5,
+              6.7,
+              3.07,
+              0.03,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2254,
+              "Niskin",
+              "A",
+              0.5,
+              7.04,
+              3.07,
+              0.03,
+              0.58
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2258,
+              "Niskin",
+              "B",
+              1.61,
+              22.08,
+              18.15,
+              0.3,
+              0.75
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2259,
+              "Niskin",
+              "C",
+              1.47,
+              24.59,
+              17.49,
+              0.28,
+              0.73
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2260,
+              "Niskin",
+              "A",
+              1.62,
+              22.08,
+              18.22,
+              0.3,
+              0.64
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2255,
+              "Niskin",
+              "B",
+              1.28,
+              15.69,
+              10.31,
+              0.17,
+              1.74
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2257,
+              "Niskin",
+              "A",
+              1.28,
+              15.35,
+              10.3,
+              0.17,
+              1.77
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2249,
+              "SurfacePump",
+              "B",
+              0.19,
+              2.8,
+              0.33,
+              0.0,
+              0.07
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2250,
+              "SurfacePump",
+              "C",
+              0.22,
+              4.75,
+              0.0,
+              0.09,
+              0.26
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2251,
+              "SurfacePump",
+              "A",
+              0.2,
+              2.8,
+              0.33,
+              0.01,
+              0.1
+            ]
+          ],
+          "truncated": false
+        },
+        "8844": {
+          "rows": 17,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "bottle.",
+            "source",
+            "replicate",
+            "x..po4..",
+            "x..si.oh.4..",
+            "x..no3..",
+            "x..no2..",
+            "x..nh4.."
+          ],
+          "data": [
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2264,
+              "Niskin",
+              "B",
+              1.16,
+              13.19,
+              7.71,
+              0.28,
+              1.86
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2265,
+              "Niskin",
+              "C",
+              1.03,
+              14.4,
+              6.49,
+              0.25,
+              1.95
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2266,
+              "Niskin",
+              "A",
+              1.15,
+              12.62,
+              6.89,
+              0.26,
+              1.76
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2261,
+              "Niskin",
+              "C",
+              2.28,
+              47.92,
+              28.42,
+              0.28,
+              0.63
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2262,
+              "Niskin",
+              "A",
+              2.42,
+              44.66,
+              29.13,
+              0.28,
+              0.65
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2263,
+              "Niskin",
+              "B",
+              2.44,
+              45.11,
+              29.45,
+              0.28,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2252,
+              "Niskin",
+              "C",
+              0.46,
+              7.76,
+              2.26,
+              0.08,
+              0.69
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2253,
+              "Niskin",
+              "B",
+              0.5,
+              6.7,
+              3.07,
+              0.03,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2254,
+              "Niskin",
+              "A",
+              0.5,
+              7.04,
+              3.07,
+              0.03,
+              0.58
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2258,
+              "Niskin",
+              "B",
+              1.61,
+              22.08,
+              18.15,
+              0.3,
+              0.75
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2259,
+              "Niskin",
+              "C",
+              1.47,
+              24.59,
+              17.49,
+              0.28,
+              0.73
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2260,
+              "Niskin",
+              "A",
+              1.62,
+              22.08,
+              18.22,
+              0.3,
+              0.64
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2255,
+              "Niskin",
+              "B",
+              1.28,
+              15.69,
+              10.31,
+              0.17,
+              1.74
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2257,
+              "Niskin",
+              "A",
+              1.28,
+              15.35,
+              10.3,
+              0.17,
+              1.77
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2249,
+              "SurfacePump",
+              "B",
+              0.19,
+              2.8,
+              0.33,
+              0.0,
+              0.07
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2250,
+              "SurfacePump",
+              "C",
+              0.22,
+              4.75,
+              0.0,
+              0.09,
+              0.26
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2251,
+              "SurfacePump",
+              "A",
+              0.2,
+              2.8,
+              0.33,
+              0.01,
+              0.1
+            ]
+          ],
+          "truncated": false
+        }
+      }
+    },
+    {
+      "support_index": 128,
+      "table": [
+        "446",
+        "V2_O2_measurements_final.csv"
+      ],
+      "spec": [
+        "swap",
+        10,
+        22,
+        [
+          0,
+          2,
+          6,
+          7,
+          8,
+          9,
+          10,
+          14
+        ]
+      ],
+      "in_target_conflict_set": true,
+      "in_source_conflict_sets": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "changes": [
+        {
+          "rowid": 10,
+          "column": "X",
+          "old": 11,
+          "new": 23
+        },
+        {
+          "rowid": 10,
+          "column": "Event",
+          "old": 1005,
+          "new": 1014
+        },
+        {
+          "rowid": 10,
+          "column": "Depth",
+          "old": 50,
+          "new": 150
+        },
+        {
+          "rowid": 10,
+          "column": "O2_corr_mL.L",
+          "old": 6.16299576,
+          "new": 2.411356512
+        },
+        {
+          "rowid": 10,
+          "column": "SD_mL.L",
+          "old": 0.939703115,
+          "new": 0.367671716
+        },
+        {
+          "rowid": 10,
+          "column": "O2_umole.L",
+          "old": 275.2369254,
+          "new": 107.6902173
+        },
+        {
+          "rowid": 10,
+          "column": "diffO2sat_umole.L",
+          "old": -17.06062316,
+          "new": -187.0938978
+        },
+        {
+          "rowid": 22,
+          "column": "X",
+          "old": 23,
+          "new": 11
+        },
+        {
+          "rowid": 22,
+          "column": "Event",
+          "old": 1014,
+          "new": 1005
+        },
+        {
+          "rowid": 22,
+          "column": "Depth",
+          "old": 150,
+          "new": 50
+        },
+        {
+          "rowid": 22,
+          "column": "O2_corr_mL.L",
+          "old": 2.411356512,
+          "new": 6.16299576
+        },
+        {
+          "rowid": 22,
+          "column": "SD_mL.L",
+          "old": 0.367671716,
+          "new": 0.939703115
+        },
+        {
+          "rowid": 22,
+          "column": "O2_umole.L",
+          "old": 107.6902173,
+          "new": 275.2369254
+        },
+        {
+          "rowid": 22,
+          "column": "diffO2sat_umole.L",
+          "old": -187.0938978,
+          "new": -17.06062316
+        }
+      ],
+      "answer_changed": {
+        "8768": true,
+        "476": false,
+        "477": false,
+        "8566": false,
+        "8705": false,
+        "8706": false,
+        "8707": false,
+        "8710": false,
+        "8713": false,
+        "8714": false,
+        "8715": false,
+        "8716": false,
+        "8724": false,
+        "8735": false,
+        "8758": false,
+        "8759": false,
+        "8760": false,
+        "8761": false,
+        "8767": false,
+        "8770": false,
+        "8806": false,
+        "8844": false
+      },
+      "answers": {
+        "8768": {
+          "rows": 8,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ],
+            [
+              null
+            ]
+          ],
+          "truncated": false
+        },
+        "476": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "477": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8566": {
+          "rows": 6,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "label",
+            "source"
+          ],
+          "data": [
+            [
+              "1001",
+              48.817,
+              231.334,
+              "P8",
+              5,
+              801,
+              "SurfacePump"
+            ],
+            [
+              "1010",
+              48.743,
+              232.333,
+              "P6",
+              5,
+              802,
+              "SurfacePump"
+            ],
+            [
+              "1019",
+              48.651,
+              233.0,
+              "P4",
+              5,
+              803,
+              "SurfacePump"
+            ],
+            [
+              "1025",
+              48.651,
+              233.0,
+              "P4",
+              45,
+              2010,
+              "McL"
+            ],
+            [
+              "1025",
+              48.651,
+              233.0,
+              "P4",
+              65,
+              2011,
+              "McL"
+            ],
+            [
+              "1040",
+              48.575,
+              234.5,
+              "P1",
+              5,
+              804,
+              "SurfacePump"
+            ]
+          ],
+          "truncated": false
+        },
+        "8705": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8706": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8707": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8710": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8713": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8714": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8715": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8716": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8724": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8735": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8758": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8759": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8760": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8761": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8767": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8770": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8806": {
+          "rows": 17,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "bottle.",
+            "source",
+            "replicate",
+            "x..po4..",
+            "x..si.oh.4..",
+            "x..no3..",
+            "x..no2..",
+            "x..nh4.."
+          ],
+          "data": [
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2264,
+              "Niskin",
+              "B",
+              1.16,
+              13.19,
+              7.71,
+              0.28,
+              1.86
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2265,
+              "Niskin",
+              "C",
+              1.03,
+              14.4,
+              6.49,
+              0.25,
+              1.95
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2266,
+              "Niskin",
+              "A",
+              1.15,
+              12.62,
+              6.89,
+              0.26,
+              1.76
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2261,
+              "Niskin",
+              "C",
+              2.28,
+              47.92,
+              28.42,
+              0.28,
+              0.63
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2262,
+              "Niskin",
+              "A",
+              2.42,
+              44.66,
+              29.13,
+              0.28,
+              0.65
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2263,
+              "Niskin",
+              "B",
+              2.44,
+              45.11,
+              29.45,
+              0.28,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2252,
+              "Niskin",
+              "C",
+              0.46,
+              7.76,
+              2.26,
+              0.08,
+              0.69
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2253,
+              "Niskin",
+              "B",
+              0.5,
+              6.7,
+              3.07,
+              0.03,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2254,
+              "Niskin",
+              "A",
+              0.5,
+              7.04,
+              3.07,
+              0.03,
+              0.58
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2258,
+              "Niskin",
+              "B",
+              1.61,
+              22.08,
+              18.15,
+              0.3,
+              0.75
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2259,
+              "Niskin",
+              "C",
+              1.47,
+              24.59,
+              17.49,
+              0.28,
+              0.73
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2260,
+              "Niskin",
+              "A",
+              1.62,
+              22.08,
+              18.22,
+              0.3,
+              0.64
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2255,
+              "Niskin",
+              "B",
+              1.28,
+              15.69,
+              10.31,
+              0.17,
+              1.74
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2257,
+              "Niskin",
+              "A",
+              1.28,
+              15.35,
+              10.3,
+              0.17,
+              1.77
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2249,
+              "SurfacePump",
+              "B",
+              0.19,
+              2.8,
+              0.33,
+              0.0,
+              0.07
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2250,
+              "SurfacePump",
+              "C",
+              0.22,
+              4.75,
+              0.0,
+              0.09,
+              0.26
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2251,
+              "SurfacePump",
+              "A",
+              0.2,
+              2.8,
+              0.33,
+              0.01,
+              0.1
+            ]
+          ],
+          "truncated": false
+        },
+        "8844": {
+          "rows": 17,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "bottle.",
+            "source",
+            "replicate",
+            "x..po4..",
+            "x..si.oh.4..",
+            "x..no3..",
+            "x..no2..",
+            "x..nh4.."
+          ],
+          "data": [
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2264,
+              "Niskin",
+              "B",
+              1.16,
+              13.19,
+              7.71,
+              0.28,
+              1.86
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2265,
+              "Niskin",
+              "C",
+              1.03,
+              14.4,
+              6.49,
+              0.25,
+              1.95
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2266,
+              "Niskin",
+              "A",
+              1.15,
+              12.62,
+              6.89,
+              0.26,
+              1.76
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2261,
+              "Niskin",
+              "C",
+              2.28,
+              47.92,
+              28.42,
+              0.28,
+              0.63
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2262,
+              "Niskin",
+              "A",
+              2.42,
+              44.66,
+              29.13,
+              0.28,
+              0.65
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2263,
+              "Niskin",
+              "B",
+              2.44,
+              45.11,
+              29.45,
+              0.28,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2252,
+              "Niskin",
+              "C",
+              0.46,
+              7.76,
+              2.26,
+              0.08,
+              0.69
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2253,
+              "Niskin",
+              "B",
+              0.5,
+              6.7,
+              3.07,
+              0.03,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2254,
+              "Niskin",
+              "A",
+              0.5,
+              7.04,
+              3.07,
+              0.03,
+              0.58
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2258,
+              "Niskin",
+              "B",
+              1.61,
+              22.08,
+              18.15,
+              0.3,
+              0.75
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2259,
+              "Niskin",
+              "C",
+              1.47,
+              24.59,
+              17.49,
+              0.28,
+              0.73
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2260,
+              "Niskin",
+              "A",
+              1.62,
+              22.08,
+              18.22,
+              0.3,
+              0.64
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2255,
+              "Niskin",
+              "B",
+              1.28,
+              15.69,
+              10.31,
+              0.17,
+              1.74
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2257,
+              "Niskin",
+              "A",
+              1.28,
+              15.35,
+              10.3,
+              0.17,
+              1.77
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2249,
+              "SurfacePump",
+              "B",
+              0.19,
+              2.8,
+              0.33,
+              0.0,
+              0.07
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2250,
+              "SurfacePump",
+              "C",
+              0.22,
+              4.75,
+              0.0,
+              0.09,
+              0.26
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2251,
+              "SurfacePump",
+              "A",
+              0.2,
+              2.8,
+              0.33,
+              0.01,
+              0.1
+            ]
+          ],
+          "truncated": false
+        }
+      }
+    },
+    {
+      "support_index": 190,
+      "table": [
+        "446",
+        "V2_O2_measurements_final.csv"
+      ],
+      "spec": [
+        "swap",
+        11,
+        46,
+        [
+          0,
+          4,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          14,
+          18
+        ]
+      ],
+      "in_target_conflict_set": true,
+      "in_source_conflict_sets": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "changes": [
+        {
+          "rowid": 11,
+          "column": "X",
+          "old": 12,
+          "new": 49
+        },
+        {
+          "rowid": 11,
+          "column": "Longitude",
+          "old": 231.334,
+          "new": 233.0
+        },
+        {
+          "rowid": 11,
+          "column": "Depth",
+          "old": 33,
+          "new": 300
+        },
+        {
+          "rowid": 11,
+          "column": "O2_corr_mL.L",
+          "old": 6.196254973,
+          "new": 1.221626943
+        },
+        {
+          "rowid": 11,
+          "column": "SD_mL.L",
+          "old": 0.944774315,
+          "new": 0.186267635
+        },
+        {
+          "rowid": 11,
+          "column": "SD_O2_umole.L",
+          "old": 42.19325558,
+          "new": 8.318640541
+        },
+        {
+          "rowid": 11,
+          "column": "O2sat_percent",
+          "old": 97.81178582,
+          "new": 17.92443597
+        },
+        {
+          "rowid": 11,
+          "column": "diffO2sat_umole.L",
+          "old": -6.190742639,
+          "new": -249.8168965
+        },
+        {
+          "rowid": 46,
+          "column": "X",
+          "old": 49,
+          "new": 12
+        },
+        {
+          "rowid": 46,
+          "column": "Longitude",
+          "old": 233.0,
+          "new": 231.334
+        },
+        {
+          "rowid": 46,
+          "column": "Depth",
+          "old": 300,
+          "new": 33
+        },
+        {
+          "rowid": 46,
+          "column": "O2_corr_mL.L",
+          "old": 1.221626943,
+          "new": 6.196254973
+        },
+        {
+          "rowid": 46,
+          "column": "SD_mL.L",
+          "old": 0.186267635,
+          "new": 0.944774315
+        },
+        {
+          "rowid": 46,
+          "column": "SD_O2_umole.L",
+          "old": 8.318640541,
+          "new": 42.19325558
+        },
+        {
+          "rowid": 46,
+          "column": "O2sat_percent",
+          "old": 17.92443597,
+          "new": 97.81178582
+        },
+        {
+          "rowid": 46,
+          "column": "diffO2sat_umole.L",
+          "old": -249.8168965,
+          "new": -6.190742639
+        }
+      ],
+      "answer_changed": {
+        "8768": true,
+        "476": false,
+        "477": false,
+        "8566": false,
+        "8705": false,
+        "8706": false,
+        "8707": false,
+        "8710": false,
+        "8713": false,
+        "8714": false,
+        "8715": false,
+        "8716": false,
+        "8724": false,
+        "8735": false,
+        "8758": false,
+        "8759": false,
+        "8760": false,
+        "8761": false,
+        "8767": false,
+        "8770": false,
+        "8806": false,
+        "8844": false
+      },
+      "answers": {
+        "8768": {
+          "rows": 8,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ],
+            [
+              null
+            ]
+          ],
+          "truncated": false
+        },
+        "476": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "477": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8566": {
+          "rows": 6,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "label",
+            "source"
+          ],
+          "data": [
+            [
+              "1001",
+              48.817,
+              231.334,
+              "P8",
+              5,
+              801,
+              "SurfacePump"
+            ],
+            [
+              "1010",
+              48.743,
+              232.333,
+              "P6",
+              5,
+              802,
+              "SurfacePump"
+            ],
+            [
+              "1019",
+              48.651,
+              233.0,
+              "P4",
+              5,
+              803,
+              "SurfacePump"
+            ],
+            [
+              "1025",
+              48.651,
+              233.0,
+              "P4",
+              45,
+              2010,
+              "McL"
+            ],
+            [
+              "1025",
+              48.651,
+              233.0,
+              "P4",
+              65,
+              2011,
+              "McL"
+            ],
+            [
+              "1040",
+              48.575,
+              234.5,
+              "P1",
+              5,
+              804,
+              "SurfacePump"
+            ]
+          ],
+          "truncated": false
+        },
+        "8705": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8706": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8707": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8710": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8713": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8714": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8715": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8716": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8724": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8735": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8758": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8759": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8760": {
+          "rows": 4,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8761": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8767": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8770": {
+          "rows": 7,
+          "columns": [
+            "station"
+          ],
+          "data": [
+            [
+              "P1"
+            ],
+            [
+              "P2"
+            ],
+            [
+              "P3"
+            ],
+            [
+              "P4"
+            ],
+            [
+              "P5"
+            ],
+            [
+              "P6"
+            ],
+            [
+              "P8"
+            ]
+          ],
+          "truncated": false
+        },
+        "8806": {
+          "rows": 17,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "bottle.",
+            "source",
+            "replicate",
+            "x..po4..",
+            "x..si.oh.4..",
+            "x..no3..",
+            "x..no2..",
+            "x..nh4.."
+          ],
+          "data": [
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2264,
+              "Niskin",
+              "B",
+              1.16,
+              13.19,
+              7.71,
+              0.28,
+              1.86
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2265,
+              "Niskin",
+              "C",
+              1.03,
+              14.4,
+              6.49,
+              0.25,
+              1.95
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2266,
+              "Niskin",
+              "A",
+              1.15,
+              12.62,
+              6.89,
+              0.26,
+              1.76
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2261,
+              "Niskin",
+              "C",
+              2.28,
+              47.92,
+              28.42,
+              0.28,
+              0.63
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2262,
+              "Niskin",
+              "A",
+              2.42,
+              44.66,
+              29.13,
+              0.28,
+              0.65
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2263,
+              "Niskin",
+              "B",
+              2.44,
+              45.11,
+              29.45,
+              0.28,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2252,
+              "Niskin",
+              "C",
+              0.46,
+              7.76,
+              2.26,
+              0.08,
+              0.69
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2253,
+              "Niskin",
+              "B",
+              0.5,
+              6.7,
+              3.07,
+              0.03,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2254,
+              "Niskin",
+              "A",
+              0.5,
+              7.04,
+              3.07,
+              0.03,
+              0.58
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2258,
+              "Niskin",
+              "B",
+              1.61,
+              22.08,
+              18.15,
+              0.3,
+              0.75
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2259,
+              "Niskin",
+              "C",
+              1.47,
+              24.59,
+              17.49,
+              0.28,
+              0.73
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2260,
+              "Niskin",
+              "A",
+              1.62,
+              22.08,
+              18.22,
+              0.3,
+              0.64
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2255,
+              "Niskin",
+              "B",
+              1.28,
+              15.69,
+              10.31,
+              0.17,
+              1.74
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2257,
+              "Niskin",
+              "A",
+              1.28,
+              15.35,
+              10.3,
+              0.17,
+              1.77
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2249,
+              "SurfacePump",
+              "B",
+              0.19,
+              2.8,
+              0.33,
+              0.0,
+              0.07
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2250,
+              "SurfacePump",
+              "C",
+              0.22,
+              4.75,
+              0.0,
+              0.09,
+              0.26
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2251,
+              "SurfacePump",
+              "A",
+              0.2,
+              2.8,
+              0.33,
+              0.01,
+              0.1
+            ]
+          ],
+          "truncated": false
+        },
+        "8844": {
+          "rows": 17,
+          "columns": [
+            "event",
+            "latitude..decimal.deg.",
+            "longitude..decimal.deg.",
+            "station",
+            "depth..m.",
+            "bottle.",
+            "source",
+            "replicate",
+            "x..po4..",
+            "x..si.oh.4..",
+            "x..no3..",
+            "x..no2..",
+            "x..nh4.."
+          ],
+          "data": [
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2264,
+              "Niskin",
+              "B",
+              1.16,
+              13.19,
+              7.71,
+              0.28,
+              1.86
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2265,
+              "Niskin",
+              "C",
+              1.03,
+              14.4,
+              6.49,
+              0.25,
+              1.95
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              40,
+              2266,
+              "Niskin",
+              "A",
+              1.15,
+              12.62,
+              6.89,
+              0.26,
+              1.76
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2261,
+              "Niskin",
+              "C",
+              2.28,
+              47.92,
+              28.42,
+              0.28,
+              0.63
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2262,
+              "Niskin",
+              "A",
+              2.42,
+              44.66,
+              29.13,
+              0.28,
+              0.65
+            ],
+            [
+              1037,
+              48.57483333,
+              234.5003333,
+              "P1",
+              100,
+              2263,
+              "Niskin",
+              "B",
+              2.44,
+              45.11,
+              29.45,
+              0.28,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2252,
+              "Niskin",
+              "C",
+              0.46,
+              7.76,
+              2.26,
+              0.08,
+              0.69
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2253,
+              "Niskin",
+              "B",
+              0.5,
+              6.7,
+              3.07,
+              0.03,
+              0.56
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              15,
+              2254,
+              "Niskin",
+              "A",
+              0.5,
+              7.04,
+              3.07,
+              0.03,
+              0.58
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2258,
+              "Niskin",
+              "B",
+              1.61,
+              22.08,
+              18.15,
+              0.3,
+              0.75
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2259,
+              "Niskin",
+              "C",
+              1.47,
+              24.59,
+              17.49,
+              0.28,
+              0.73
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              30,
+              2260,
+              "Niskin",
+              "A",
+              1.62,
+              22.08,
+              18.22,
+              0.3,
+              0.64
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2255,
+              "Niskin",
+              "B",
+              1.28,
+              15.69,
+              10.31,
+              0.17,
+              1.74
+            ],
+            [
+              1038,
+              48.57483333,
+              234.5003333,
+              "P1",
+              70,
+              2257,
+              "Niskin",
+              "A",
+              1.28,
+              15.35,
+              10.3,
+              0.17,
+              1.77
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2249,
+              "SurfacePump",
+              "B",
+              0.19,
+              2.8,
+              0.33,
+              0.0,
+              0.07
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2250,
+              "SurfacePump",
+              "C",
+              0.22,
+              4.75,
+              0.0,
+              0.09,
+              0.26
+            ],
+            [
+              1040,
+              48.57483333,
+              234.5003333,
+              "P1",
+              0,
+              2251,
+              "SurfacePump",
+              "A",
+              0.2,
+              2.8,
+              0.33,
+              0.01,
+              0.1
+            ]
+          ],
+          "truncated": false
+        }
+      }
+    }
+  ]
+}

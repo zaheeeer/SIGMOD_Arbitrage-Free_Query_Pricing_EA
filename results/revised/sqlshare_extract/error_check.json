@@ -1,0 +1,12 @@
+{
+  "seconds": 1405.2,
+  "neighbours_checked": 640,
+  "with_error": 0,
+  "changed_sets_differ": 0,
+  "old_matches_cached_share": 1.0,
+  "stored_rule": [
+    "isolated_errors_as_change"
+  ],
+  "stored_matches_share": 1.0,
+  "stored_mismatch_markets": []
+}
