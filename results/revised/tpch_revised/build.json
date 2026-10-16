@@ -1,0 +1,55 @@
+{
+ "n_assets": 368,
+ "n_pairs": 1046,
+ "n_months": 84,
+ "querymarket_unsellable": 0,
+ "costs": {
+  "catalog_seconds": 25.606377799995244,
+  "timing_seconds": 81.79837790000602,
+  "support_seconds": 4.501445600006264,
+  "scores_seconds": 0.2385853000014322,
+  "op_structure_seconds": 0.020383199997013435
+ },
+ "single_source_op_pairs": 1046,
+ "settings": {
+  "n_assets": 200,
+  "support_n": 400,
+  "support_seed": 0,
+  "neighbours": "qirana",
+  "swap_ratio": 0.5,
+  "fit": "breakpoints",
+  "max_lps": 0,
+  "cip_eps": 0.5,
+  "n_buyers": 800,
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "demand_arms": [
+   "same",
+   "shift10",
+   "shift25",
+   "shift50",
+   "redrawn"
+  ],
+  "main_arm": "same",
+  "train_sizes": [
+   100,
+   200,
+   400,
+   800,
+   1600
+  ],
+  "metered_repeats": 3,
+  "ilp_time_limit": 10.0,
+  "expect_catalog": [
+   368,
+   1046
+  ]
+ },
+ "fingerprint": "ec79407bc3e0",
+ "build_seconds": 112.19127079999453
+}
