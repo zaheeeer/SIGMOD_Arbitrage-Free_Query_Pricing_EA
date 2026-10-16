@@ -1,0 +1,21 @@
+
+\begin{table}[t]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Study A: LPIP minus UBP revenue as a share of the buyers' total value (the normalization of Chawla et al.), mean over 16 workloads (15 markets and \tpch{}), \qirana{} supports, no LP cap; in brackets, workloads where LPIP earns more. Bold: the 95\% bootstrap interval over workloads excludes zero.}
+  \label{tab:studyA}
+  \begin{tabular}{@{}lcccc@{}}
+    \toprule
+    & \multicolumn{2}{c}{one buyer per query} & \multicolumn{2}{c}{800 buyers by popularity} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    valuations & in sample & held out & in sample & held out \\
+    \midrule
+    ours (4 families) & \textbf{+0.112 (12/16)} & \textbf{$-$0.054 (4/16)} & \textbf{$-$0.043 (7/16)} & \textbf{$-$0.061 (3/16)} \\
+    Uniform$[1, 10]$ & $-$0.031 (9/16) & \textbf{$-$0.187 (0/16)} & \textbf{$-$0.130 (2/16)} & \textbf{$-$0.151 (0/16)} \\
+    Uniform$[1, 100]$ & $-$0.008 (9/16) & \textbf{$-$0.207 (0/16)} & \textbf{$-$0.131 (2/16)} & \textbf{$-$0.153 (0/16)} \\
+    Zipf, $a = 1.5$ & +0.036 (11/16) & \textbf{$-$0.082 (2/16)} & $-$0.055 (9/16) & \textbf{+0.054 (14/16)} \\
+    Zipf, $a = 2.5$ & $-$0.059 (8/16) & \textbf{$-$0.220 (1/16)} & \textbf{$-$0.160 (1/16)} & \textbf{$-$0.168 (0/16)} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

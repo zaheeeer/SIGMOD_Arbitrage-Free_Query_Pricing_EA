@@ -1,0 +1,18 @@
+
+\begin{table*}[t]
+  \centering
+  \small
+  \caption{Study B on the main market, mean over three sampler seeds: cost of 1,000 support instances, the priceable assets, price levels, and refuted lattice pairs, and the same at the time budget of the readership sampler. (cap): stopped at 20,000 instances.}
+  \label{tab:sampling}
+  \begin{tabular}{@{}lrrrrrrrr@{}}
+    \toprule
+    & \multicolumn{5}{c}{equal size, $|\supportset| = 1000$} & \multicolumn{3}{c}{equal time budget} \\
+    \cmidrule(lr){2-6}\cmidrule(lr){7-9}
+    sampler & seconds & queries & priceable & levels & refuted & $|\supportset|$ & priceable & refuted \\
+    \midrule
+    size-prop.\ deletions & 122 & 1,704 & 125 & 10 & 11 & 20,000 (cap) & 170 & 32 \\
+    readership deletions & 16,449 & 48,581 & 182 & 43 & 77 & -- & -- & -- \\
+    \qirana{} updates & 3,399 & 11,488 & 181 & 43 & 268 & 4,450 & 185 & 339 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

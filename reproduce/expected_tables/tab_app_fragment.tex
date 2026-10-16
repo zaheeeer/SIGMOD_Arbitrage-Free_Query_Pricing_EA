@@ -1,0 +1,22 @@
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \caption{Operational fragment on the main market: 50 of 222 query texts are in the fragment, 42 targets have query-text sources, and 161 query-text pairs hold. Reasons for the queries outside the fragment (first reason found).}
+  \label{tab:app-fragment}
+  \begin{tabular}{@{}lr@{}}
+    \toprule
+    reason & queries \\
+    \midrule
+    has joins & 83 \\
+    has group & 27 \\
+    not a base table or alias & 21 \\
+    select list is not plain columns & 17 \\
+    predicate outside the fragment & 12 \\
+    subquery or aggregate & 6 \\
+    duplicate output names & 2 \\
+    not a plain SELECT & 2 \\
+    no single table & 2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

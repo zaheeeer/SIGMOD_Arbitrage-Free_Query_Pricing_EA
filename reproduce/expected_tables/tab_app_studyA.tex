@@ -1,0 +1,62 @@
+
+\begin{table*}[tp]
+  \centering
+  \footnotesize
+  \caption{Study A, all cells: LPIP minus UBP revenue, mean over workloads (in brackets: workloads where LPIP earns more). Normalization by the buyers' total value (Chawla et al.) or by the training monopoly revenue (the main protocol). Supports: \qirana{} updates (16 workloads) or row deletions (main market and \tpch{}).}
+  \label{tab:app-studyA}
+  \begin{tabular}{@{}llllcccc@{}}
+    \toprule
+    & & & & \multicolumn{2}{c}{one buyer per query} & \multicolumn{2}{c}{popularity} \\
+    \cmidrule(lr){5-6}\cmidrule(lr){7-8}
+    normalization & support & LP cap & valuations & in sample & held out & in sample & held out \\
+    \midrule
+    share of value & updates & none & ours & +0.112 (12/16) & $-$0.054 (4/16) & $-$0.043 (7/16) & $-$0.061 (3/16) \\
+    share of value & updates & none & U10 & $-$0.031 (9/16) & $-$0.187 (0/16) & $-$0.130 (2/16) & $-$0.151 (0/16) \\
+    share of value & updates & none & U100 & $-$0.008 (9/16) & $-$0.207 (0/16) & $-$0.131 (2/16) & $-$0.153 (0/16) \\
+    share of value & updates & none & Zipf 1.5 & +0.036 (11/16) & $-$0.082 (2/16) & $-$0.055 (9/16) & +0.054 (14/16) \\
+    share of value & updates & none & Zipf 2.5 & $-$0.059 (8/16) & $-$0.220 (1/16) & $-$0.160 (1/16) & $-$0.168 (0/16) \\
+    \midrule
+    share of value & updates & 60 & ours & +0.111 (12/16) & $-$0.055 (4/16) & $-$0.046 (7/16) & $-$0.062 (2/16) \\
+    share of value & updates & 60 & U10 & $-$0.032 (9/16) & $-$0.187 (0/16) & $-$0.131 (2/16) & $-$0.152 (0/16) \\
+    share of value & updates & 60 & U100 & $-$0.008 (9/16) & $-$0.207 (0/16) & $-$0.132 (2/16) & $-$0.153 (0/16) \\
+    share of value & updates & 60 & Zipf 1.5 & +0.032 (10/16) & $-$0.082 (2/16) & $-$0.239 (0/16) & +0.013 (12/16) \\
+    share of value & updates & 60 & Zipf 2.5 & $-$0.060 (8/16) & $-$0.219 (1/16) & $-$0.160 (1/16) & $-$0.168 (0/16) \\
+    \midrule
+    share of value & deletions & none & ours & $-$0.055 (1/2) & $-$0.096 (0/2) & $-$0.069 (0/2) & $-$0.106 (0/2) \\
+    share of value & deletions & none & U10 & $-$0.265 (0/2) & $-$0.317 (0/2) & $-$0.250 (0/2) & $-$0.271 (0/2) \\
+    share of value & deletions & none & U100 & $-$0.237 (0/2) & $-$0.293 (0/2) & $-$0.259 (0/2) & $-$0.262 (0/2) \\
+    share of value & deletions & none & Zipf 1.5 & $-$0.009 (1/2) & $-$0.073 (0/2) & $-$0.007 (1/2) & +0.062 (2/2) \\
+    share of value & deletions & none & Zipf 2.5 & $-$0.248 (0/2) & $-$0.406 (0/2) & $-$0.272 (0/2) & $-$0.321 (0/2) \\
+    \midrule
+    share of value & deletions & 60 & ours & $-$0.067 (1/2) & $-$0.097 (0/2) & $-$0.080 (0/2) & $-$0.105 (0/2) \\
+    share of value & deletions & 60 & U10 & $-$0.271 (0/2) & $-$0.315 (0/2) & $-$0.252 (0/2) & $-$0.272 (0/2) \\
+    share of value & deletions & 60 & U100 & $-$0.238 (0/2) & $-$0.294 (0/2) & $-$0.261 (0/2) & $-$0.263 (0/2) \\
+    share of value & deletions & 60 & Zipf 1.5 & $-$0.044 (1/2) & $-$0.073 (0/2) & $-$0.133 (0/2) & +0.035 (2/2) \\
+    share of value & deletions & 60 & Zipf 2.5 & $-$0.280 (0/2) & $-$0.404 (0/2) & $-$0.272 (0/2) & $-$0.321 (0/2) \\
+    \midrule
+    monopoly ref. & updates & none & ours & +0.112 (12/16) & $-$0.057 (3/16) & $-$0.092 (7/16) & $-$0.124 (3/16) \\
+    monopoly ref. & updates & none & U10 & $-$0.031 (9/16) & $-$0.176 (0/16) & $-$0.225 (2/16) & $-$0.259 (0/16) \\
+    monopoly ref. & updates & none & U100 & $-$0.008 (9/16) & $-$0.207 (0/16) & $-$0.228 (2/16) & $-$0.264 (0/16) \\
+    monopoly ref. & updates & none & Zipf 1.5 & +0.036 (11/16) & $-$0.336 (2/16) & $-$0.056 (9/16) & $-$0.010 (6/16) \\
+    monopoly ref. & updates & none & Zipf 2.5 & $-$0.059 (8/16) & $-$0.209 (0/16) & $-$0.268 (1/16) & $-$0.277 (0/16) \\
+    \midrule
+    monopoly ref. & updates & 60 & ours & +0.111 (12/16) & $-$0.057 (3/16) & $-$0.098 (7/16) & $-$0.126 (2/16) \\
+    monopoly ref. & updates & 60 & U10 & $-$0.032 (9/16) & $-$0.177 (0/16) & $-$0.228 (2/16) & $-$0.260 (0/16) \\
+    monopoly ref. & updates & 60 & U100 & $-$0.008 (9/16) & $-$0.207 (0/16) & $-$0.231 (2/16) & $-$0.263 (0/16) \\
+    monopoly ref. & updates & 60 & Zipf 1.5 & +0.032 (10/16) & $-$0.335 (2/16) & $-$0.255 (0/16) & $-$0.024 (4/16) \\
+    monopoly ref. & updates & 60 & Zipf 2.5 & $-$0.060 (8/16) & $-$0.209 (0/16) & $-$0.268 (1/16) & $-$0.277 (0/16) \\
+    \midrule
+    monopoly ref. & deletions & none & ours & $-$0.055 (1/2) & $-$0.101 (0/2) & $-$0.109 (0/2) & $-$0.160 (0/2) \\
+    monopoly ref. & deletions & none & U10 & $-$0.265 (0/2) & $-$0.316 (0/2) & $-$0.372 (0/2) & $-$0.401 (0/2) \\
+    monopoly ref. & deletions & none & U100 & $-$0.237 (0/2) & $-$0.291 (0/2) & $-$0.385 (0/2) & $-$0.387 (0/2) \\
+    monopoly ref. & deletions & none & Zipf 1.5 & $-$0.009 (1/2) & $-$0.650 (0/2) & $-$0.000 (1/2) & +0.088 (2/2) \\
+    monopoly ref. & deletions & none & Zipf 2.5 & $-$0.248 (0/2) & $-$0.363 (0/2) & $-$0.396 (0/2) & $-$0.459 (0/2) \\
+    \midrule
+    monopoly ref. & deletions & 60 & ours & $-$0.067 (1/2) & $-$0.102 (0/2) & $-$0.125 (0/2) & $-$0.159 (0/2) \\
+    monopoly ref. & deletions & 60 & U10 & $-$0.271 (0/2) & $-$0.315 (0/2) & $-$0.375 (0/2) & $-$0.401 (0/2) \\
+    monopoly ref. & deletions & 60 & U100 & $-$0.238 (0/2) & $-$0.292 (0/2) & $-$0.387 (0/2) & $-$0.388 (0/2) \\
+    monopoly ref. & deletions & 60 & Zipf 1.5 & $-$0.044 (1/2) & $-$0.657 (0/2) & $-$0.134 (0/2) & +0.027 (1/2) \\
+    monopoly ref. & deletions & 60 & Zipf 2.5 & $-$0.280 (0/2) & $-$0.361 (0/2) & $-$0.396 (0/2) & $-$0.459 (0/2) \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

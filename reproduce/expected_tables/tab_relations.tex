@@ -1,0 +1,23 @@
+
+\begin{table}[t]
+  \centering
+  \small
+  \setlength{\tabcolsep}{3.5pt}
+  \caption{The three relations of Section~\ref{sec:relations} on \sqlshare{}: pairs found, and pairs refuted by a support instance that changes the target answer but not the source answer (Corollary~\ref{cor:falsifier}). Pricing support: 1,000 \qirana{} updates per market.}
+  \label{tab:relations}
+  \begin{tabular}{@{}lrrrr@{}}
+    \toprule
+    & \multicolumn{2}{c}{main market} & \multicolumn{2}{c}{15 markets} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+    relation & pairs & refuted & pairs & refuted \\
+    \midrule
+    derivability on $D$ (Def.~\ref{def:derivability}) & 1,902 & 248 & 2,677 & 283 \\
+    query-text guarantee (Def.~\ref{def:querytext}) & 161 & 0 & 325 & 0 \\
+    both & 148 & -- & 262 & -- \\
+    \midrule
+    \multicolumn{5}{@{}l}{main market, other supports (lattice pairs refuted)} \\
+    \quad 30,000 size-proportional deletions & & 47 & & \\
+    \quad 1,000 readership-weighted deletions & & 69 & & \\
+    \bottomrule
+  \end{tabular}
+\end{table}

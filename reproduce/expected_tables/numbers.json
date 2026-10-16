@@ -1,0 +1,10 @@
+{
+ "main_summary": {
+  "assets": 222,
+  "claimed_edges": 1902,
+  "plans_verified": 4075,
+  "plans_failed": 10,
+  "corr_size_vs_readership": -0.093,
+  "zero_priced_pricing_support": 46
+ }
+}

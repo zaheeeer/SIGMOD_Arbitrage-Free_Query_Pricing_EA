@@ -1,0 +1,32 @@
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{2.5pt}
+  \caption{Workload structure in study A: hyperedges (conflict sets) of the queries on each support. Shares are over pairs of non-empty hyperedges.}
+  \label{tab:app-workloads}
+  \begin{tabular}{@{}llrrrrrrr@{}}
+    \toprule
+    workload & support & queries & items & empty & size & Jaccard & nested & disjoint \\
+    \midrule
+    1641 & updates & 81 & 775 & 0.09 & 12.8 & 0.035 & 0.041 & 0.959 \\
+    2610 & updates & 27 & 0 & 1.00 & 0.0 & 0.000 & 0.000 & 0.000 \\
+    270 & updates & 19 & 638 & 0.26 & 76.5 & 0.130 & 0.330 & 0.527 \\
+    2941 & updates & 18 & 488 & 0.06 & 74.8 & 0.174 & 0.176 & 0.610 \\
+    33 & updates & 8 & 129 & 0.75 & 32.2 & 1.000 & 1.000 & 0.000 \\
+    4086 & updates & 64 & 985 & 0.00 & 17.4 & 0.003 & 0.004 & 0.996 \\
+    458 & updates & 18 & 1,000 & 0.17 & 562.7 & 0.518 & 0.714 & 0.038 \\
+    459 & updates & 47 & 991 & 0.02 & 242.8 & 0.258 & 0.262 & 0.240 \\
+    474 & deletions & 222 & 959 & 0.18 & 100.6 & 0.100 & 0.132 & 0.766 \\
+    474 & updates & 222 & 892 & 0.21 & 24.4 & 0.084 & 0.106 & 0.775 \\
+    4930 & updates & 81 & 983 & 0.00 & 103.8 & 0.083 & 0.151 & 0.514 \\
+    6229 & updates & 33 & 34 & 0.64 & 4.6 & 0.267 & 0.455 & 0.106 \\
+    6969 & updates & 31 & 535 & 0.13 & 121.5 & 0.408 & 0.191 & 0.134 \\
+    7635 & updates & 60 & 771 & 0.10 & 49.3 & 0.131 & 0.130 & 0.606 \\
+    7948 & updates & 48 & 659 & 0.04 & 43.6 & 0.109 & 0.101 & 0.640 \\
+    8126 & updates & 55 & 986 & 0.04 & 132.1 & 0.108 & 0.068 & 0.365 \\
+    \tpch{} & deletions & 368 & 400 & 0.17 & 15.8 & 0.011 & 0.087 & 0.902 \\
+    \tpch{} & updates & 368 & 376 & 0.07 & 19.5 & 0.015 & 0.060 & 0.775 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

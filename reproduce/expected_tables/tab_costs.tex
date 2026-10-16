@@ -1,0 +1,21 @@
+
+\begin{table}[t]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Costs in seconds on one laptop (Section~\ref{sec:environment}): support construction once per market, price fitting and planning per run (mean). Other markets: median [range] over the 14 markets for the support, mean over 15 markets otherwise. \tpch{} deletion support: 1.1 s.}
+  \label{tab:costs}
+  \begin{tabular}{@{}p{0.43\columnwidth}rrr@{}}
+    \toprule
+    & main & other markets & \tpch{} \\
+    \midrule
+    support build, \qirana{} updates, 1,000 instances & 347 & 256 [9.1, 34,582] & 4.5 \\
+    fit LPIP (one LP per buyer) & 64.4 & 108 & 27.0 \\
+    fit CIP & 1.4 & 2.5 & 0.645 \\
+    fit UBP & 0.005 & 0.005 & 0.003 \\
+    fit \qirana{} weighted coverage & 0.037 & 0.036 & 0.019 \\
+    planning, operational buyer (LPIP prices) & 0.001 & 0.000 & 0.139 \\
+    planning, privileged attacker (LPIP prices) & 0.089 & 0.009 & -- \\
+    \bottomrule
+  \end{tabular}
+\end{table}

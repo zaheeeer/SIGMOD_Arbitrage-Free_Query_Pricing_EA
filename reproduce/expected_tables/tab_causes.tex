@@ -1,0 +1,20 @@
+
+\begin{table}[t]
+  \centering
+  \small
+  \caption{Free rebuilds: distinct verified plans (target, sources) with gain 1.00 under a construction, main arm, by cause (Section~\ref{sec:causes}). Baselines are not counted.}
+  \label{tab:causes}
+  \begin{tabular}{@{}lrrr@{}}
+    \toprule
+    & \multicolumn{2}{c}{\sqlshare{} main} & \tpch{} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-4}
+    cause & privileged & operational & operational \\
+    \midrule
+    instance-specific coincidence & 162 & 0 & 0 \\
+    no bundle guarantee (UEG) & 3 & 0 & 2 \\
+    target not for sale ($\pi = \infty$) & 6 & 1 & 0 \\
+    baseline, no guarantee & 0 & 0 & 0 \\
+    conflict sets cover the target & 0 & 0 & 0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

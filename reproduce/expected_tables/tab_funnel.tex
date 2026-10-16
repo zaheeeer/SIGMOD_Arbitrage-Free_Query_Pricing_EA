@@ -1,0 +1,23 @@
+
+\begin{table}[t]
+  \centering
+  \small
+  \caption{\sqlshare{} funnel, from the query log to the assets of the 15 markets with the full protocol; Section~\ref{sec:workloads} explains the last step.}
+  \label{tab:funnel}
+  \begin{tabular}{@{}p{0.70\columnwidth}r@{}}
+    \toprule
+    step & queries \\
+    \midrule
+    queries in release & 11,121 \\
+    all relations resolvable & 6,398 \\
+    in a selected market component & 2,660 \\
+    transpiled to DuckDB & 2,506 \\
+    names resolve against loaded schema & 1,135 \\
+    executes successfully & 1,051 \\
+    returns a non-empty answer & 975 \\
+    in the 15 structural markets (lattice) & 947 \\
+    materialized assets, structural markets & 806 \\
+    assets, 15 markets with the full protocol & 812 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

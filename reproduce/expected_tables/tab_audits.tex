@@ -1,0 +1,35 @@
+
+\begin{table*}[t]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \caption{Arbitrage audits (Equation~\eqref{eq:audits}), mean over runs. $r_{\mathrm{I}}$: share of query-text pairs whose prices invert. $r_{\mathrm{C}}$: share of assets rebuilt for less than the posted price; max: mean largest gain. Attackers as in Section~\ref{sec:attackers}. Symbols as in Table~\ref{tab:main}.}
+  \label{tab:audits}
+  \begin{tabular}{@{}lccccccccccc@{}}
+    \toprule
+    & \multicolumn{5}{c}{\sqlshare{} main market} & \multicolumn{2}{c}{15 markets} & \multicolumn{3}{c}{\tpch{}} \\
+    \cmidrule(lr){2-6}\cmidrule(lr){7-8}\cmidrule(lr){9-11}
+    & & \multicolumn{2}{c}{operational} & \multicolumn{2}{c}{privileged} & oper. & priv. & & \multicolumn{2}{c}{operational} \\
+    \cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){10-11}
+    mechanism & $r_{\mathrm{I}}$ & $r_{\mathrm{C}}$ & max & $r_{\mathrm{C}}$ & max & $r_{\mathrm{C}}$ & $r_{\mathrm{C}}$ & $r_{\mathrm{I}}$ & $r_{\mathrm{C}}$ & max \\
+    \midrule
+    size proportional & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+    compute metered & 0.491 & 0.131 & 0.806 & 0.347 & 0.972 & 0.068 & 0.147 & 0.137 & 0.310 & 0.557 \\
+    per-asset monopoly & 0.434 & 0.111 & 0.916 & 0.338 & 0.952 & 0.067 & 0.155 & 0.241 & 0.395 & 0.938 \\
+    monotone fitted & 0.014 & 0.007 & 0.379 & 0.001 & 0.125 & 0.038 & 0.005 & 0.000 & 0.029 & 0.581 \\
+    \midrule
+    \qirana{} weighted coverage & 0.000 & 0.000 & 0.000 & 0.014 & 1.000 & 0.000 & 0.010 & 0.000 & 0.000 & 0.000 \\
+    \qirana{} Shannon entropy & 0.000 & 0.000 & 0.000 & 0.014 & 1.000 & 0.000 & 0.010 & 0.000 & 0.000 & 0.000 \\
+    \qirana{} unif.\ entropy gain$^{\ddagger}$ & 0.000 & 0.000 & 0.000 & 0.014 & 1.000 & 0.000 & 0.010 & 0.000 & 0.049 & 1.000 \\
+    \querymarket{} view cover$^{\dagger}$ & 0.000 & 0.000 & 0.000 & 0.108 & 1.000 & 0.000 & 0.015 & 0.000 & 0.000 & 0.000 \\
+    \querymarket{}, instance level$^{\S}$ & 0.006 & 0.005 & 1.000 & 0.000 & 0.000 & 0.000 & 0.004 & -- & -- & -- \\
+    \midrule
+    uniform bundle (UBP) & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+    uniform item (UIP) & 0.000 & 0.000 & 0.000 & 0.014 & 1.000 & 0.000 & 0.010 & 0.000 & 0.000 & 0.000 \\
+    LP item (LPIP) & 0.000 & 0.000 & 0.000 & 0.011 & 0.571 & 0.000 & 0.005 & 0.000 & 0.000 & 0.000 \\
+    capacity item (CIP) & 0.000 & 0.000 & 0.000 & 0.027 & 1.000 & 0.000 & 0.008 & 0.000 & 0.000 & 0.000 \\
+    layering & 0.000 & 0.000 & 0.000 & 0.005 & 0.844 & 0.000 & 0.002 & 0.000 & 0.000 & 0.000 \\
+    XOS & 0.000 & 0.000 & 0.000 & 0.026 & 1.000 & 0.000 & 0.007 & 0.000 & 0.000 & 0.000 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

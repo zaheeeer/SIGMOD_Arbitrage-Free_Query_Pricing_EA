@@ -1,0 +1,23 @@
+
+\begin{table}[t]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Study C: welfare minus that of UBP at matched revenue (40\% of the reference) and matched coverage (50\% served), operational buyer; mean over matched runs. $k$: workloads with the 95\% interval above / below zero / workloads compared.}
+  \label{tab:matched}
+  \begin{tabular}{@{}lcccccc@{}}
+    \toprule
+    & \multicolumn{3}{c}{revenue 0.40} & \multicolumn{3}{c}{coverage 0.50} \\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+    mechanism & main & \tpch{} & $k$ & main & \tpch{} & $k$ \\
+    \midrule
+    LP item (LPIP) & +0.199 & +0.056 & 10/1/15 & $-$0.222 & $-$0.321 & 0/13/13 \\
+    XOS & +0.062 & $-$0.019 & 10/1/15 & $-$0.255 & $-$0.187 & 0/13/13 \\
+    uniform item (UIP) & $-$0.081 & $-$0.079 & 1/2/15 & $-$0.064 & $-$0.334 & 0/13/13 \\
+    \qirana{} weighted coverage & $-$0.081 & $-$0.079 & 1/2/15 & $-$0.063 & $-$0.334 & 0/13/13 \\
+    \qirana{} unif.\ entropy gain$^{\ddagger}$ & $-$0.042 & +0.029 & 8/1/15 & $-$0.058 & $-$0.070 & 0/13/13 \\
+    \querymarket{} view cover$^{\dagger}$ & $-$0.142 & $-$0.123 & 1/9/16 & $-$0.250 & $-$0.456 & 0/14/16 \\
+    per-asset monopoly & +0.101 & $-$0.050 & 11/1/16 & $-$0.252 & $-$0.032 & 0/16/16 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

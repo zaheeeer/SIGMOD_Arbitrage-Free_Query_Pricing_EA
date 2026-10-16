@@ -1,0 +1,34 @@
+
+\begin{table}[tbp]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Study D: \qirana{} supports with values drawn uniformly from the distinct values (distinct, the main protocol) or copied from a random row (frequency); same relations, seeds, and size. Top: support quality. Bottom: revenue against the operational buyer, frequency minus distinct, with the 95\% interval over the 20 paired runs.}
+  \label{tab:app-studyD}
+  \begin{tabular}{@{}llrrrr@{}}
+    \toprule
+    workload & donors & priceable & levels & median $|C|$ & refuted \\
+    \midrule
+    main market & distinct & 176 & 48 & 19.0 & 248 \\
+    main market & frequency & 178 & 48 & 18.0 & 309 \\
+    \tpch{} & distinct & 344 & 53 & 7.0 & 0 \\
+    \tpch{} & frequency & 337 & 54 & 7.5 & 0 \\
+    \bottomrule
+  \end{tabular}
+
+  \medskip
+  \begin{tabular}{@{}lcc@{}}
+    \toprule
+    mechanism & main market & \tpch{} \\
+    \midrule
+    \qirana{} weighted coverage & $-$0.002 [$-$0.013, 0.010] & +0.005 [$-$0.005, 0.015] \\
+    \qirana{} Shannon entropy & $-$0.001 [$-$0.012, 0.010] & $-$0.004 [$-$0.014, 0.005] \\
+    \qirana{} unif.\ entropy gain$^{\ddagger}$ & $-$0.005 [$-$0.011, 0.001] & +0.009 [0.004, 0.014] \\
+    uniform item (UIP) & $-$0.014 [$-$0.026, $-$0.003] & +0.005 [$-$0.005, 0.013] \\
+    LP item (LPIP) & +0.018 [0.005, 0.034] & $-$0.011 [$-$0.025, 0.000] \\
+    capacity item (CIP) & +0.009 [$-$0.002, 0.021] & +0.007 [$-$0.005, 0.021] \\
+    layering & $-$0.010 [$-$0.027, 0.006] & $-$0.040 [$-$0.080, $-$0.005] \\
+    XOS & +0.010 [$-$0.002, 0.024] & $-$0.005 [$-$0.016, 0.010] \\
+    \bottomrule
+  \end{tabular}
+\end{table}

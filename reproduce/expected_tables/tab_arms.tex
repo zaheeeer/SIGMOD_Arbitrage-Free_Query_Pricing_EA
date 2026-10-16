@@ -1,0 +1,25 @@
+
+\begin{table*}[t]
+  \centering
+  \small
+  \caption{Generalization gap $\Gamma$ (Equation~\eqref{eq:gap}, share of training revenue lost on test buyers; negative: a gain) by test arm (800 training buyers) and by training size (same demand). $\tau$: Kendall rank correlation between training and test popularity (main market). Mean over 4 families $\times$ 5 seeds. WC: \qirana{} weighted coverage; mon.: per-asset monopoly.}
+  \label{tab:arms}
+  \begin{tabular}{@{}lcccccccccccc@{}}
+    \toprule
+    & & \multicolumn{5}{c}{\sqlshare{} main market} & \multicolumn{5}{c}{\tpch{}} \\
+    \cmidrule(lr){3-7}\cmidrule(lr){8-12}
+    test arm or training size & $\tau$ & UBP & LPIP & CIP & WC & mon. & UBP & LPIP & CIP & WC & mon. \\
+    \midrule
+    same demand (main arm) & 1.00 & 0.077 & 0.179 & 0.077 & 0.119 & 0.420 & 0.030 & 0.201 & 0.217 & 0.086 & 0.438 \\
+    10\% of ranks permuted & 0.88 & 0.069 & 0.212 & 0.082 & 0.113 & 0.425 & $-$0.001 & 0.216 & 0.168 & 0.078 & 0.423 \\
+    25\% of ranks permuted & 0.68 & 0.107 & 0.267 & 0.132 & 0.128 & 0.508 & 0.012 & 0.126 & 0.192 & 0.084 & 0.432 \\
+    50\% of ranks permuted & 0.42 & $-$0.019 & 0.202 & 0.101 & 0.073 & 0.434 & 0.046 & 0.343 & 0.214 & 0.105 & 0.483 \\
+    redrawn ranking & -0.00 & $-$0.196 & 0.065 & $-$0.132 & $-$0.222 & 0.375 & 0.040 & $-$0.104 & $-$0.172 & $-$0.109 & 0.514 \\
+    \midrule
+    100 training buyers & 1.00 & 0.302 & 0.493 & 0.357 & 0.294 & 0.630 & 0.254 & 0.569 & 0.532 & 0.231 & 0.598 \\
+    200 & 1.00 & 0.246 & 0.384 & 0.204 & 0.276 & 0.601 & 0.156 & 0.453 & 0.454 & 0.177 & 0.567 \\
+    400 & 1.00 & 0.067 & 0.243 & 0.115 & 0.097 & 0.498 & 0.095 & 0.348 & 0.412 & 0.176 & 0.542 \\
+    1,600 & 1.00 & 0.110 & 0.177 & 0.080 & 0.137 & 0.356 & 0.030 & 0.077 & 0.107 & 0.040 & 0.381 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

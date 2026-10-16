@@ -1,0 +1,32 @@
+
+\begin{table*}[t]
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{2.7pt}
+  \caption{Paired 95\% bootstrap intervals of the mean difference with UBP (mechanism minus UBP), operational buyer (Section~\ref{sec:metrics}). Bold: the interval excludes zero. ``higher'': settings in which the mechanism earns more revenue than UBP. Symbols as in Table~\ref{tab:main}.}
+  \label{tab:comparisons}
+  \begin{tabular}{@{}lccrccrccr@{}}
+    \toprule
+    & \multicolumn{3}{c}{\sqlshare{} main market} & \multicolumn{3}{c}{\sqlshare{}, 15 markets} & \multicolumn{3}{c}{\tpch{}} \\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+    mechanism & $\Delta$ revenue & $\Delta$ welfare & higher & $\Delta$ revenue & $\Delta$ welfare & higher & $\Delta$ revenue & $\Delta$ welfare & higher \\
+    \midrule
+    size proportional & \textbf{[$-$0.258, $-$0.013]} & [$-$0.147, 0.169] & 10/20 & \textbf{[$-$0.134, $-$0.072]} & [$-$0.067, 0.040] & 142/300 & [$-$0.036, 0.074] & [$-$0.149, 0.034] & 10/20 \\
+    compute metered & [$-$0.093, 0.040] & [$-$0.085, 0.171] & 10/20 & \textbf{[$-$0.125, $-$0.057]} & [$-$0.021, 0.040] & 89/300 & [$-$0.038, 0.043] & \textbf{[0.045, 0.122]} & 12/20 \\
+    per-asset monopoly & [$-$0.020, 0.044] & [$-$0.041, 0.096] & 10/20 & \textbf{[0.018, 0.073]} & [$-$0.025, 0.038] & 157/300 & [$-$0.054, 0.040] & \textbf{[0.074, 0.304]} & 12/20 \\
+    monotone fitted & \textbf{[$-$0.145, $-$0.022]} & \textbf{[$-$0.374, $-$0.077]} & 6/20 & [$-$0.062, 0.028] & \textbf{[$-$0.260, $-$0.074]} & 125/300 & \textbf{[0.001, 0.118]} & \textbf{[$-$0.214, $-$0.057]} & 14/20 \\
+    \midrule
+    \qirana{} weighted coverage & \textbf{[$-$0.216, $-$0.093]} & [$-$0.015, 0.080] & 1/20 & \textbf{[$-$0.287, $-$0.114]} & \textbf{[0.039, 0.189]} & 93/300 & [$-$0.077, 0.081] & [$-$0.078, 0.174] & 13/20 \\
+    \qirana{} Shannon entropy & \textbf{[$-$0.216, $-$0.092]} & [$-$0.014, 0.081] & 1/20 & \textbf{[$-$0.286, $-$0.114]} & \textbf{[0.038, 0.188]} & 92/300 & [$-$0.067, 0.100] & [$-$0.027, 0.206] & 12/20 \\
+    \qirana{} unif.\ entropy gain$^{\ddagger}$ & \textbf{[$-$0.130, $-$0.037]} & \textbf{[0.022, 0.081]} & 5/20 & \textbf{[$-$0.251, $-$0.062]} & \textbf{[0.048, 0.183]} & 93/300 & [$-$0.061, 0.026] & [$-$0.004, 0.135] & 12/20 \\
+    \querymarket{} view cover$^{\dagger}$ & [$-$0.116, 0.009] & [$-$0.167, 0.017] & 9/20 & \textbf{[$-$0.214, $-$0.040]} & \textbf{[$-$0.393, $-$0.057]} & 78/300 & [$-$0.093, 0.048] & [$-$0.144, 0.031] & 12/20 \\
+    \querymarket{}, instance level$^{\S}$ & \textbf{[$-$0.158, $-$0.022]} & \textbf{[$-$0.226, $-$0.037]} & 7/20 & \textbf{[$-$0.213, $-$0.096]} & \textbf{[$-$0.429, $-$0.170]} & 62/300 & -- & -- & -- \\
+    \midrule
+    uniform item (UIP) & \textbf{[$-$0.214, $-$0.088]} & [$-$0.008, 0.087] & 2/20 & \textbf{[$-$0.287, $-$0.114]} & \textbf{[0.041, 0.191]} & 95/300 & [$-$0.076, 0.081] & [$-$0.078, 0.174] & 13/20 \\
+    LP item (LPIP) & \textbf{[$-$0.130, $-$0.015]} & \textbf{[0.135, 0.301]} & 5/20 & \textbf{[$-$0.241, $-$0.038]} & \textbf{[0.081, 0.222]} & 88/300 & \textbf{[$-$0.219, $-$0.033]} & [$-$0.049, 0.192] & 9/20 \\
+    capacity item (CIP) & \textbf{[$-$0.199, $-$0.057]} & [$-$0.019, 0.112] & 7/20 & \textbf{[$-$0.317, $-$0.145]} & [$-$0.108, 0.127] & 54/300 & \textbf{[$-$0.191, $-$0.036]} & \textbf{[$-$0.328, $-$0.124]} & 5/20 \\
+    layering & \textbf{[$-$0.450, $-$0.295]} & [$-$0.067, 0.116] & 0/20 & \textbf{[$-$0.598, $-$0.384]} & \textbf{[$-$0.535, $-$0.171]} & 8/300 & \textbf{[$-$0.356, $-$0.236]} & [$-$0.137, 0.005] & 0/20 \\
+    XOS & \textbf{[$-$0.152, $-$0.024]} & [$-$0.095, 0.036] & 9/20 & \textbf{[$-$0.273, $-$0.083]} & [$-$0.212, 0.057] & 77/300 & \textbf{[$-$0.197, $-$0.024]} & \textbf{[$-$0.392, $-$0.165]} & 6/20 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

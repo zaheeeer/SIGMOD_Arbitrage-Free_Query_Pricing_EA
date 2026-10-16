@@ -1,0 +1,315 @@
+table,row,column,paper_value
+Table 4,flat fee (= UBP),revenue_tpch,0.466
+Table 4,flat fee (= UBP),revenue_sqlshare,0.600
+Table 4,flat fee (= UBP),welfare_tpch,1.150
+Table 4,flat fee (= UBP),welfare_sqlshare,1.396
+Table 4,flat fee (= UBP),served_tpch,0.52
+Table 4,flat fee (= UBP),served_sqlshare,0.37
+Table 4,size proportional,revenue_tpch,0.183
+Table 4,size proportional,revenue_sqlshare,0.372
+Table 4,size proportional,welfare_tpch,1.388
+Table 4,size proportional,welfare_sqlshare,1.653
+Table 4,size proportional,served_tpch,0.98
+Table 4,size proportional,served_sqlshare,0.94
+Table 4,compute metered,revenue_tpch,0.359
+Table 4,compute metered,revenue_sqlshare,0.279
+Table 4,compute metered,welfare_tpch,1.130
+Table 4,compute metered,welfare_sqlshare,1.698
+Table 4,compute metered,served_tpch,0.58
+Table 4,compute metered,served_sqlshare,0.84
+Table 4,per-asset monopoly,revenue_tpch,0.466
+Table 4,per-asset monopoly,revenue_sqlshare,0.537
+Table 4,per-asset monopoly,welfare_tpch,1.052
+Table 4,per-asset monopoly,welfare_sqlshare,1.452
+Table 4,per-asset monopoly,served_tpch,0.53
+Table 4,per-asset monopoly,served_sqlshare,0.63
+Table 4,monotone fitted,revenue_tpch,0.473
+Table 4,monotone fitted,revenue_sqlshare,0.434
+Table 4,monotone fitted,welfare_tpch,0.881
+Table 4,monotone fitted,welfare_sqlshare,1.093
+Table 4,monotone fitted,served_tpch,0.43
+Table 4,monotone fitted,served_sqlshare,0.26
+Table 4,Qirana weighted coverage,revenue_tpch,0.181
+Table 4,Qirana weighted coverage,revenue_sqlshare,0.366
+Table 4,Qirana weighted coverage,welfare_tpch,1.376
+Table 4,Qirana weighted coverage,welfare_sqlshare,1.514
+Table 4,Qirana weighted coverage,served_tpch,0.98
+Table 4,Qirana weighted coverage,served_sqlshare,0.62
+Table 4,Qirana uniform gain,revenue_tpch,0.181
+Table 4,Qirana uniform gain,revenue_sqlshare,0.366
+Table 4,Qirana uniform gain,welfare_tpch,1.376
+Table 4,Qirana uniform gain,welfare_sqlshare,1.514
+Table 4,Qirana uniform gain,served_tpch,0.98
+Table 4,Qirana uniform gain,served_sqlshare,0.62
+Table 4,Qirana entropy,revenue_tpch,0.208
+Table 4,Qirana entropy,revenue_sqlshare,0.368
+Table 4,Qirana entropy,welfare_tpch,1.368
+Table 4,Qirana entropy,welfare_sqlshare,1.512
+Table 4,Qirana entropy,served_tpch,0.97
+Table 4,Qirana entropy,served_sqlshare,0.62
+Table 4,QueryMarket view cover,revenue_tpch,0.196
+Table 4,QueryMarket view cover,revenue_sqlshare,0.088
+Table 4,QueryMarket view cover,welfare_tpch,1.371
+Table 4,QueryMarket view cover,welfare_sqlshare,1.706
+Table 4,QueryMarket view cover,served_tpch,0.98
+Table 4,QueryMarket view cover,served_sqlshare,0.85
+Table 4,uniform bundle (UBP),revenue_tpch,0.476
+Table 4,uniform bundle (UBP),revenue_sqlshare,0.609
+Table 4,uniform bundle (UBP),welfare_tpch,1.083
+Table 4,uniform bundle (UBP),welfare_sqlshare,1.289
+Table 4,uniform bundle (UBP),served_tpch,0.46
+Table 4,uniform bundle (UBP),served_sqlshare,0.32
+Table 4,uniform item (UIP),revenue_tpch,0.388
+Table 4,uniform item (UIP),revenue_sqlshare,0.413
+Table 4,uniform item (UIP),welfare_tpch,1.056
+Table 4,uniform item (UIP),welfare_sqlshare,1.190
+Table 4,uniform item (UIP),served_tpch,0.73
+Table 4,uniform item (UIP),served_sqlshare,0.49
+Table 4,LP item (LPIP),revenue_tpch,0.114
+Table 4,LP item (LPIP),revenue_sqlshare,0.490
+Table 4,LP item (LPIP),welfare_tpch,1.322
+Table 4,LP item (LPIP),welfare_sqlshare,1.463
+Table 4,LP item (LPIP),served_tpch,0.94
+Table 4,LP item (LPIP),served_sqlshare,0.76
+Table 4,capacity item (CIP),revenue_tpch,0.230
+Table 4,capacity item (CIP),revenue_sqlshare,0.481
+Table 4,capacity item (CIP),welfare_tpch,1.065
+Table 4,capacity item (CIP),welfare_sqlshare,1.365
+Table 4,capacity item (CIP),served_tpch,0.75
+Table 4,capacity item (CIP),served_sqlshare,0.65
+Table 4,layering,revenue_tpch,0.119
+Table 4,layering,revenue_sqlshare,0.181
+Table 4,layering,welfare_tpch,1.048
+Table 4,layering,welfare_sqlshare,1.204
+Table 4,layering,served_tpch,0.82
+Table 4,layering,served_sqlshare,0.73
+Table 4,XOS,revenue_tpch,0.230
+Table 4,XOS,revenue_sqlshare,0.528
+Table 4,XOS,welfare_tpch,1.053
+Table 4,XOS,welfare_sqlshare,1.286
+Table 4,XOS,served_tpch,0.74
+Table 4,XOS,served_sqlshare,0.57
+Table 5,flat fee (= UBP),gap_tpch,+0.102
+Table 5,flat fee (= UBP),gap_sqlshare,-0.108
+Table 5,size proportional,gap_tpch,+0.072
+Table 5,size proportional,gap_sqlshare,-0.139
+Table 5,compute metered,gap_tpch,+0.097
+Table 5,compute metered,gap_sqlshare,-0.313
+Table 5,per-asset monopoly,gap_tpch,+0.537
+Table 5,per-asset monopoly,gap_sqlshare,+0.470
+Table 5,monotone fitted,gap_tpch,+0.470
+Table 5,monotone fitted,gap_sqlshare,+0.411
+Table 5,Qirana weighted coverage,gap_tpch,+0.135
+Table 5,Qirana weighted coverage,gap_sqlshare,-0.060
+Table 5,Qirana uniform gain,gap_tpch,+0.135
+Table 5,Qirana uniform gain,gap_sqlshare,-0.060
+Table 5,Qirana entropy,gap_tpch,+0.093
+Table 5,Qirana entropy,gap_sqlshare,-0.056
+Table 5,QueryMarket view cover,gap_tpch,+0.083
+Table 5,QueryMarket view cover,gap_sqlshare,+0.091
+Table 5,uniform bundle (UBP),gap_tpch,+0.108
+Table 5,uniform bundle (UBP),gap_sqlshare,-0.051
+Table 5,uniform item (UIP),gap_tpch,+0.163
+Table 5,uniform item (UIP),gap_sqlshare,+0.121
+Table 5,LP item (LPIP),gap_tpch,+0.667
+Table 5,LP item (LPIP),gap_sqlshare,+0.058
+Table 5,capacity item (CIP),gap_tpch,+0.428
+Table 5,capacity item (CIP),gap_sqlshare,+0.013
+Table 5,layering,gap_tpch,+0.492
+Table 5,layering,gap_sqlshare,+0.108
+Table 5,XOS,gap_tpch,+0.420
+Table 5,XOS,gap_sqlshare,+0.019
+Table 6,flat fee (= UBP),info_arb_tpch,0.000
+Table 6,flat fee (= UBP),info_arb_sqlshare,0.000
+Table 6,flat fee (= UBP),comb_arb_tpch,0.000
+Table 6,flat fee (= UBP),comb_arb_sqlshare,0.000
+Table 6,flat fee (= UBP),max_gain_tpch,0.000
+Table 6,flat fee (= UBP),max_gain_sqlshare,0.000
+Table 6,size proportional,info_arb_tpch,0.000
+Table 6,size proportional,info_arb_sqlshare,0.000
+Table 6,size proportional,comb_arb_tpch,0.000
+Table 6,size proportional,comb_arb_sqlshare,0.000
+Table 6,size proportional,max_gain_tpch,0.000
+Table 6,size proportional,max_gain_sqlshare,0.000
+Table 6,compute metered,info_arb_tpch,0.150
+Table 6,compute metered,info_arb_sqlshare,0.452
+Table 6,compute metered,comb_arb_tpch,0.014
+Table 6,compute metered,comb_arb_sqlshare,0.347
+Table 6,compute metered,max_gain_tpch,0.181
+Table 6,compute metered,max_gain_sqlshare,0.985
+Table 6,per-asset monopoly,info_arb_tpch,0.224
+Table 6,per-asset monopoly,info_arb_sqlshare,0.337
+Table 6,per-asset monopoly,comb_arb_tpch,0.168
+Table 6,per-asset monopoly,comb_arb_sqlshare,0.349
+Table 6,per-asset monopoly,max_gain_tpch,0.915
+Table 6,per-asset monopoly,max_gain_sqlshare,0.958
+Table 6,monotone fitted,info_arb_tpch,0.000
+Table 6,monotone fitted,info_arb_sqlshare,0.000
+Table 6,monotone fitted,comb_arb_tpch,0.028
+Table 6,monotone fitted,comb_arb_sqlshare,0.000
+Table 6,monotone fitted,max_gain_tpch,0.574
+Table 6,monotone fitted,max_gain_sqlshare,0.069
+Table 6,Qirana weighted coverage,info_arb_tpch,0.000
+Table 6,Qirana weighted coverage,info_arb_sqlshare,0.006
+Table 6,Qirana weighted coverage,comb_arb_tpch,0.000
+Table 6,Qirana weighted coverage,comb_arb_sqlshare,0.005
+Table 6,Qirana weighted coverage,max_gain_tpch,0.000
+Table 6,Qirana weighted coverage,max_gain_sqlshare,1.000
+Table 6,Qirana uniform gain,info_arb_tpch,0.000
+Table 6,Qirana uniform gain,info_arb_sqlshare,0.006
+Table 6,Qirana uniform gain,comb_arb_tpch,0.000
+Table 6,Qirana uniform gain,comb_arb_sqlshare,0.005
+Table 6,Qirana uniform gain,max_gain_tpch,0.000
+Table 6,Qirana uniform gain,max_gain_sqlshare,1.000
+Table 6,Qirana entropy,info_arb_tpch,0.000
+Table 6,Qirana entropy,info_arb_sqlshare,0.006
+Table 6,Qirana entropy,comb_arb_tpch,0.000
+Table 6,Qirana entropy,comb_arb_sqlshare,0.005
+Table 6,Qirana entropy,max_gain_tpch,0.000
+Table 6,Qirana entropy,max_gain_sqlshare,1.000
+Table 6,QueryMarket view cover,info_arb_tpch,0.000
+Table 6,QueryMarket view cover,info_arb_sqlshare,0.001
+Table 6,QueryMarket view cover,comb_arb_tpch,0.000
+Table 6,QueryMarket view cover,comb_arb_sqlshare,0.000
+Table 6,QueryMarket view cover,max_gain_tpch,0.000
+Table 6,QueryMarket view cover,max_gain_sqlshare,0.000
+Table 6,uniform bundle (UBP),info_arb_tpch,0.000
+Table 6,uniform bundle (UBP),info_arb_sqlshare,0.000
+Table 6,uniform bundle (UBP),comb_arb_tpch,0.000
+Table 6,uniform bundle (UBP),comb_arb_sqlshare,0.000
+Table 6,uniform bundle (UBP),max_gain_tpch,0.000
+Table 6,uniform bundle (UBP),max_gain_sqlshare,0.000
+Table 6,uniform item (UIP),info_arb_tpch,0.000
+Table 6,uniform item (UIP),info_arb_sqlshare,0.006
+Table 6,uniform item (UIP),comb_arb_tpch,0.000
+Table 6,uniform item (UIP),comb_arb_sqlshare,0.005
+Table 6,uniform item (UIP),max_gain_tpch,0.000
+Table 6,uniform item (UIP),max_gain_sqlshare,1.000
+Table 6,LP item (LPIP),info_arb_tpch,0.000
+Table 6,LP item (LPIP),info_arb_sqlshare,0.002
+Table 6,LP item (LPIP),comb_arb_tpch,0.000
+Table 6,LP item (LPIP),comb_arb_sqlshare,0.002
+Table 6,LP item (LPIP),max_gain_tpch,0.000
+Table 6,LP item (LPIP),max_gain_sqlshare,0.500
+Table 6,capacity item (CIP),info_arb_tpch,0.000
+Table 6,capacity item (CIP),info_arb_sqlshare,0.008
+Table 6,capacity item (CIP),comb_arb_tpch,0.000
+Table 6,capacity item (CIP),comb_arb_sqlshare,0.004
+Table 6,capacity item (CIP),max_gain_tpch,0.000
+Table 6,capacity item (CIP),max_gain_sqlshare,0.900
+Table 6,layering,info_arb_tpch,0.000
+Table 6,layering,info_arb_sqlshare,0.003
+Table 6,layering,comb_arb_tpch,0.000
+Table 6,layering,comb_arb_sqlshare,0.002
+Table 6,layering,max_gain_tpch,0.000
+Table 6,layering,max_gain_sqlshare,0.500
+Table 6,XOS,info_arb_tpch,0.000
+Table 6,XOS,info_arb_sqlshare,0.005
+Table 6,XOS,comb_arb_tpch,0.000
+Table 6,XOS,comb_arb_sqlshare,0.004
+Table 6,XOS,max_gain_tpch,0.000
+Table 6,XOS,max_gain_sqlshare,0.900
+Table 7,priceable assets (of 222),size_proportional,111
+Table 7,priceable assets (of 222),size_min,67
+Table 7,priceable assets (of 222),size_max,122
+Table 7,priceable assets (of 222),readership_weighted,162
+Table 7,priceable assets (of 222),read_min,162
+Table 7,priceable assets (of 222),read_max,169
+Table 7,median |C(a)|,size_proportional,0.5
+Table 7,median |C(a)|,size_min,0
+Table 7,median |C(a)|,size_max,1
+Table 7,median |C(a)|,readership_weighted,75
+Table 7,median |C(a)|,read_min,70
+Table 7,median |C(a)|,read_max,86
+Table 7,price levels,size_proportional,5
+Table 7,price levels,size_min,5
+Table 7,price levels,size_max,8
+Table 7,price levels,readership_weighted,38
+Table 7,price levels,read_min,38
+Table 7,price levels,read_max,40
+Table 7,build time (s),size_proportional,5.5
+Table 7,build time (s),readership_weighted,622
+Table 8,flat fee (= UBP),revenue_mean,0.700
+Table 8,flat fee (= UBP),revenue_sd,0.225
+Table 8,flat fee (= UBP),welfare_mean,1.597
+Table 8,flat fee (= UBP),welfare_sd,0.594
+Table 8,per-asset monopoly,revenue_mean,0.728
+Table 8,per-asset monopoly,revenue_sd,0.297
+Table 8,per-asset monopoly,welfare_mean,1.404
+Table 8,per-asset monopoly,welfare_sd,0.504
+Table 8,Qirana weighted coverage,revenue_mean,0.249
+Table 8,Qirana weighted coverage,revenue_sd,0.293
+Table 8,Qirana weighted coverage,welfare_mean,1.940
+Table 8,Qirana weighted coverage,welfare_sd,0.748
+Table 8,QueryMarket view cover,revenue_mean,0.579
+Table 8,QueryMarket view cover,revenue_sd,0.295
+Table 8,QueryMarket view cover,welfare_mean,1.869
+Table 8,QueryMarket view cover,welfare_sd,0.649
+Table 8,uniform bundle (UBP),revenue_mean,0.714
+Table 8,uniform bundle (UBP),revenue_sd,0.245
+Table 8,uniform bundle (UBP),welfare_mean,1.476
+Table 8,uniform bundle (UBP),welfare_sd,0.526
+Table 8,LP item (LPIP),revenue_mean,0.349
+Table 8,LP item (LPIP),revenue_sd,0.352
+Table 8,LP item (LPIP),welfare_mean,1.843
+Table 8,LP item (LPIP),welfare_sd,0.767
+Table 9,claimed edges,setting,2047
+Table 9,claimed edges,all_alternatives,1902
+Table 9,claimed edges,added_alone,-145
+Table 9,claimed edges,added_last,-145
+Table 9,refuted edges,setting,45
+Table 9,refuted edges,setting_min,39
+Table 9,refuted edges,setting_max,45
+Table 9,refuted edges,all_alternatives,14
+Table 9,refuted edges,all_min,14
+Table 9,refuted edges,all_max,16
+Table 9,refuted edges,added_alone,-29
+Table 9,refuted edges,added_last,-29
+Table 9,zero-priced assets,setting,60
+Table 9,zero-priced assets,setting_min,53
+Table 9,zero-priced assets,setting_max,60
+Table 9,zero-priced assets,all_alternatives,40
+Table 9,zero-priced assets,all_min,35
+Table 9,zero-priced assets,all_max,45
+Table 9,zero-priced assets,added_alone,-20
+Table 9,zero-priced assets,added_last,-20
+Table 9,"priceable assets, readership weighted",setting,162
+Table 9,"priceable assets, readership weighted",setting_min,162
+Table 9,"priceable assets, readership weighted",setting_max,169
+Table 9,"priceable assets, readership weighted",all_alternatives,182
+Table 9,"priceable assets, readership weighted",all_min,177
+Table 9,"priceable assets, readership weighted",all_max,187
+Table 9,"priceable assets, readership weighted",added_alone,+20
+Table 9,"priceable assets, readership weighted",added_last,+20
+Table 9,Qirana maximum gain,setting,1.00
+Table 9,Qirana maximum gain,setting_min,1.00
+Table 9,Qirana maximum gain,setting_max,1.00
+Table 9,Qirana maximum gain,all_alternatives,0.78
+Table 9,Qirana maximum gain,all_min,0.73
+Table 9,Qirana maximum gain,all_max,0.78
+Table 9,Qirana maximum gain,added_alone,-0.22
+Table 9,Qirana maximum gain,added_last,-0.22
+Table 9,share of fits at the grid cap,setting,0.237
+Table 9,share of fits at the grid cap,all_alternatives,0.000
+Table 9,share of fits at the grid cap,added_alone,-0.237
+Table 9,share of fits at the grid cap,added_last,-0.230
+Table 9,QueryMarket revenue,setting,0.088
+Table 9,QueryMarket revenue,all_alternatives,0.472
+Table 9,QueryMarket revenue,added_alone,+0.442
+Table 9,QueryMarket revenue,added_last,+0.406
+Table 9,QueryMarket welfare,setting,1.706
+Table 9,QueryMarket welfare,all_alternatives,0.999
+Table 9,QueryMarket welfare,added_alone,-0.638
+Table 9,QueryMarket welfare,added_last,-0.446
+Table 9,Qirana weighted coverage welfare,setting,1.514
+Table 9,Qirana weighted coverage welfare,all_alternatives,1.184
+Table 9,Qirana weighted coverage welfare,added_alone,-0.321
+Table 9,Qirana weighted coverage welfare,added_last,-0.177
+Table 9,negative generalization gaps (of 15),setting,7
+Table 9,negative generalization gaps (of 15),all_alternatives,0
+Table 9,negative generalization gaps (of 15),added_alone,-7
+Table 9,negative generalization gaps (of 15),added_last,-4
+Table 9,Qirana information arbitrage,setting,0.006
+Table 9,Qirana information arbitrage,all_alternatives,0.000
+Table 9,Qirana information arbitrage,added_alone,-0.006
+Table 9,Qirana information arbitrage,added_last,-0.005
