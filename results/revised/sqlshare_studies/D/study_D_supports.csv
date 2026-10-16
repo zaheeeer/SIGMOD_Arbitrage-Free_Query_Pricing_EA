@@ -1,0 +1,3 @@
+workload,donors,draws,rejected,build_seconds,support_n,assets,assets_priceable,zero_priced,distinct_price_levels,median_conflict_set,lattice_pairs,lattice_pairs_refuted
+sqlshare_474,distinct,1010,10,346.9,1000,222,176,46,48,19.0,1902,248
+sqlshare_474,frequency,1013,13,263.8,1000,222,178,44,48,18.0,1902,309

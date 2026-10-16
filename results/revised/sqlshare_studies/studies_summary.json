@@ -1,0 +1,16 @@
+{
+  "which": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "seconds": {
+    "A": 8.0,
+    "B": 6.6,
+    "C": 11.0,
+    "D": 0.1
+  },
+  "fingerprint": "4e66aafb0636",
+  "total_seconds": 26.5
+}
